@@ -1,5 +1,5 @@
 "use client";
-import MoonScene from "./MoonScene";
+import Moon from "./Moon";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { Typewriter } from "react-simple-typewriter";
 export function Banner() {
@@ -23,7 +23,7 @@ export function Banner() {
           <p className="text-xl md:text-2xl font-thin pointer-events-none">
             HELLO from the MOON
           </p>
-          <h1 className=" text-4xl md:text-8xl  font-garamond ">
+          <h1 className=" text-4xl md:text-8xl  font-sans ">
             It&apos;s Ellan Shi
           </h1>
           <p className="text-xl md:text-2xl font-thin pointer-events-none">
@@ -51,7 +51,7 @@ export function Banner() {
 
       {/* 3D Scene */}
       <div className="">
-        <MoonScene />
+        <Moon />
       </div>
     </div>
   );
