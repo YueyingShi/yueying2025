@@ -1,7 +1,6 @@
 "use client";
-
+import NavItem from "./NavItem";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,7 +9,6 @@ export default function Navbar() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -22,13 +20,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="flex max-w-7xl mx-auto p-4 text-white justify-between gap-4">
-        <Link href="/">Home</Link>
-        <Link href="#projects" scroll={false}>
-          Projects
-        </Link>
-        <Link href="#about" scroll={false}>
-          About
-        </Link>
+        <NavItem label="HOME" isHome />
+        <NavItem label="PROJECTS" href="#projects" />
+        <NavItem label="ABOUT ME" href="#about" />
       </nav>
     </div>
   );
