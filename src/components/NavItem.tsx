@@ -19,7 +19,9 @@ export default function NavItem(props: NavItemProps) {
   const pathname = usePathname();
   const router = useRouter();
 
-  const baseClass = "text-white cursor-pointer hover:underline transition";
+  const baseClass = `${
+    pathname === "/" ? "text-gray-50" : "text-gray-400"
+  } cursor-pointer border-b-2 border-transparent hover:border-gray-300 transition`;
 
   if (props.isHome) {
     const handleClick = () => {

@@ -23,7 +23,7 @@ export function Banner() {
           <p className="text-xl md:text-2xl font-thin pointer-events-none">
             HELLO from the MOON
           </p>
-          <h1 className=" text-4xl md:text-8xl  font-sans ">
+          <h1 className=" text-4xl md:text-7xl  font-mono ">
             It&apos;s Ellan Shi
           </h1>
           <p className="text-xl md:text-2xl font-thin pointer-events-none">
