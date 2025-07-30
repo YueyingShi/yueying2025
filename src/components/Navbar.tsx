@@ -20,9 +20,9 @@ export default function Navbar() {
       }`}
     >
       <nav className="flex max-w-7xl mx-auto p-4 text-white justify-between gap-4">
-        <NavItem label="HOME" isHome />
-        <NavItem label="PROJECTS" href="#projects" />
-        <NavItem label="ABOUT ME" href="#about" />
+        <NavItem label="HOME" href="/#banner" isHome />
+        <NavItem label="PROJECTS" href="/#projects" isHome />
+        <NavItem label="ABOUT " href="/#about" isHome />
       </nav>
     </div>
   );

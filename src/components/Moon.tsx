@@ -7,9 +7,29 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { RGBELoader } from "three/addons/loaders/RGBELoader.js";
 import { PMREMGenerator } from "three";
 
-export default function MoonScene() {
+type MoonSceneProps = {
+  desktopSize?: number;
+  mobileSize?: number;
+};
+
+export default function MoonScene({
+  desktopSize = 960,
+  mobileSize = 640,
+}: MoonSceneProps) {
   const mountRef = useRef<HTMLDivElement>(null);
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
+  const [size, setSize] = React.useState(() => {
+    if (typeof window === "undefined") return desktopSize;
+    return window.innerWidth <= 768 ? mobileSize : desktopSize;
+  });
+  useEffect(() => {
+    const handleResize = () => {
+      const newSize = window.innerWidth <= 768 ? mobileSize : desktopSize;
+      setSize(newSize);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [desktopSize, mobileSize]);
 
   useEffect(() => {
     if (!mountRef.current) return;
@@ -17,17 +37,13 @@ export default function MoonScene() {
     const scene = new THREE.Scene();
     scene.background = null;
 
-    // Get actual size BEFORE initializing camera
-    const width = mountRef.current.clientWidth;
-    const height = mountRef.current.clientHeight;
-
-    const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 1000);
     camera.position.z = 5;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
-    renderer.setSize(width, height);
-    camera.aspect = width / height;
+    renderer.setSize(size, size);
+    camera.aspect = 1;
     camera.updateProjectionMatrix();
     mountRef.current.appendChild(renderer.domElement);
     rendererRef.current = renderer;
@@ -44,7 +60,8 @@ export default function MoonScene() {
       const envMap = pmremGenerator.fromEquirectangular(texture).texture;
       scene.environment = envMap;
 
-      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMapping = THREE.CineonToneMapping;
+      //other options: NeutralToneMapping
       renderer.toneMappingExposure = 0.6;
       texture.dispose();
       pmremGenerator.dispose();
@@ -56,8 +73,8 @@ export default function MoonScene() {
       "/moon-v1.glb",
       (gltf) => {
         moon = gltf.scene;
-        const size = width / 60000;
-        moon.scale.set(size, size, size);
+
+        moon.scale.set(size / 60000, size / 60000, size / 60000);
         moon.position.set(0, 0, 0);
         scene.add(moon);
         renderer.render(scene, camera);
@@ -86,5 +103,5 @@ export default function MoonScene() {
     };
   }, []);
 
-  return <div ref={mountRef} className="w-[960px] h-[960px] " />;
+  return <div ref={mountRef} />;
 }

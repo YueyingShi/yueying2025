@@ -4,17 +4,19 @@ import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { Typewriter } from "react-simple-typewriter";
 export function Banner() {
   return (
-    <div className="flex justify-center items-center h-screen  overflow-hidden">
+    <div
+      className="flex justify-center items-center h-screen  overflow-hidden"
+      id="banner"
+    >
       {/* Background Image with filters (only this div is filtered) */}
       {/* Background Image */}
       <div
         className="absolute inset-0 h-screen -z-10"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1472712739516-7ad2b786e1f7?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          backgroundImage: 'url("/max-mckinnon-c9OCWLka764-unsplash.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "grayscale(100%) brightness(40%)",
+          filter: " saturate(0.1) brightness(0.8)",
         }}
       />
       {/* Text */}
@@ -43,9 +45,11 @@ export function Banner() {
         </div>
         <a
           href="#projects"
-          className="p-2 pt-3 pb-1 rounded-full hover:bg-[#ffffff66] pointer-events-auto"
+          className="p-2 pt-3 pb-1 rounded-full pointer-events-auto
+             transition duration-300 ease-in-out
+             hover:bg-white/20 hover:scale-110 transform"
         >
-          <ChevronDownIcon className="h-16 w-16" />
+          <ChevronDownIcon className="h-12 w-12" />
         </a>
       </div>
 

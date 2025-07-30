@@ -3,45 +3,46 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
-type NavItemProps =
-  | {
-      label: string;
-      href: string;
-      scroll?: boolean;
-      isHome?: false;
-    }
-  | {
-      label: string;
-      isHome: true;
-    };
+type NavItemProps = {
+  label: string;
+  href: string;
+  scroll?: boolean;
+  isHome?: boolean;
+};
 
-export default function NavItem(props: NavItemProps) {
+export default function NavItem({ label, href }: NavItemProps) {
   const pathname = usePathname();
   const router = useRouter();
 
   const baseClass = `${
-    pathname === "/" ? "text-gray-50" : "text-gray-400"
-  } cursor-pointer border-b-2 border-transparent hover:border-gray-300 transition`;
+    pathname === "/"
+      ? "text-gray-50 hover:border-white/40"
+      : "text-gray-400 hover:border-gray-300"
+  } cursor-pointer border-b-2 border-transparent   transition duration-300 ease-in-out`;
 
-  if (props.isHome) {
-    const handleClick = () => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const targetId = href.split("#")[1];
+
       if (pathname === "/") {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        // Already on home, scroll directly
+        const el = document.getElementById(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
       } else {
-        router.push("/");
+        // Navigate to home, then scroll after hydration
+        router.push(`/#${targetId}`);
       }
-    };
-
-    return (
-      <button className={baseClass} onClick={handleClick}>
-        {props.label}
-      </button>
-    );
-  }
+    } else {
+      router.push(href);
+    }
+  };
 
   return (
-    <Link href={props.href} scroll={props.scroll ?? true} className={baseClass}>
-      {props.label}
+    <Link href={href} onClick={handleClick} className={baseClass}>
+      {label}
     </Link>
   );
 }

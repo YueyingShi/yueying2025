@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 interface Project {
   slug: string;
   title: string;
-  description: string;
+  short_description: string;
 }
 
 interface ProjectListProps {
