@@ -2,7 +2,7 @@
 
 import { Banner } from "@/components/Banner";
 import { ProjectList } from "@/components/ProjectList";
-import { projects } from "@/data/projects";
+import { projects } from "../../public/data/projects";
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import About from "@/components/About";

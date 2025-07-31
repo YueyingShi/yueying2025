@@ -55,7 +55,8 @@ export function Banner() {
 
       {/* 3D Scene */}
       <div className="">
-        <Moon />
+        <p>Place holder for 3D scene</p>
+        {/* <Moon /> */}
       </div>
     </div>
   );
