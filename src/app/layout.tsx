@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto, Roboto_Mono, Lora } from "next/font/google";
+import { Roboto, Roboto_Mono, Lora, Rock_Salt } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+
+const rockSalt = Rock_Salt({
+  variable: "--font-rock-salt",
+  weight: ["400"], // only regular weight
+});
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -22,7 +27,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Yueying Portfolio",
+  title: "It's Yueying",
   description: "2025 latest works",
 };
 
@@ -34,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${robotoMono.variable} ${lora.variable} antialiased`}
+        className={`${roboto.variable} ${robotoMono.variable}  ${lora.variable} ${rockSalt.variable} antialiased`}
       >
         <Navbar />
         {children}

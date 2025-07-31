@@ -21,12 +21,12 @@ export function Banner() {
       />
       {/* Text */}
       <div className="absolute inset-0 flex flex-col gap-8 justify-center items-center z-10 text-white pointer-events-none ">
-        <div className="flex flex-col gap-2 items-center text-center ">
+        <div className="flex flex-col gap-6 items-center text-center ">
           <p className="text-xl md:text-2xl font-thin pointer-events-none">
             HELLO from the MOON
           </p>
-          <h1 className=" text-4xl md:text-7xl  font-mono ">
-            It&apos;s Ellan Shi
+          <h1 className=" text-4xl md:text-7xl font-display ">
+            It&apos;s Yueying Shi
           </h1>
           <p className="text-xl md:text-2xl font-thin pointer-events-none">
             ... and let us talk about{" "}

@@ -11,6 +11,7 @@
   --font-sans: var(--font-roboto);
   --font-mono: var(--font-roboto-mono);
   --font-serif: var(--font-lora);
+  --font-display: var(--font-rock-salt);
 }
 
 @media (prefers-color-scheme: dark) {

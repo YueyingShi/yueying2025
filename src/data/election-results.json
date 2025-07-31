@@ -1,0 +1,2531 @@
+{
+  "2004": {
+    "AL": {
+      "votes": {
+        "REPUBLICAN": 1176394,
+        "DEMOCRAT": 693933,
+        "OTHER": 13088
+      },
+      "total": 1883415,
+      "winner": "REPUBLICAN"
+    },
+    "AK": {
+      "votes": {
+        "REPUBLICAN": 190889,
+        "DEMOCRAT": 111025,
+        "OTHER": 9009,
+        "LIBERTARIAN": 1675
+      },
+      "total": 312598,
+      "winner": "REPUBLICAN"
+    },
+    "AZ": {
+      "votes": {
+        "REPUBLICAN": 1104294,
+        "DEMOCRAT": 893524,
+        "LIBERTARIAN": 11856,
+        "OTHER": 2911
+      },
+      "total": 2012585,
+      "winner": "REPUBLICAN"
+    },
+    "AR": {
+      "votes": {
+        "REPUBLICAN": 572898,
+        "DEMOCRAT": 469953,
+        "OTHER": 9742,
+        "LIBERTARIAN": 2352
+      },
+      "total": 1054945,
+      "winner": "REPUBLICAN"
+    },
+    "CA": {
+      "votes": {
+        "DEMOCRAT": 6745485,
+        "REPUBLICAN": 5509826,
+        "LIBERTARIAN": 50165,
+        "OTHER": 115877
+      },
+      "total": 12421353,
+      "winner": "DEMOCRAT"
+    },
+    "CO": {
+      "votes": {
+        "REPUBLICAN": 1101255,
+        "DEMOCRAT": 1001732,
+        "OTHER": 18979,
+        "LIBERTARIAN": 7664
+      },
+      "total": 2129630,
+      "winner": "REPUBLICAN"
+    },
+    "CT": {
+      "votes": {
+        "DEMOCRAT": 857488,
+        "REPUBLICAN": 693826,
+        "OTHER": 24088,
+        "LIBERTARIAN": 3367
+      },
+      "total": 1578769,
+      "winner": "DEMOCRAT"
+    },
+    "DE": {
+      "votes": {
+        "DEMOCRAT": 200152,
+        "REPUBLICAN": 171660,
+        "OTHER": 2792,
+        "LIBERTARIAN": 586
+      },
+      "total": 375190,
+      "winner": "DEMOCRAT"
+    },
+    "DC": {
+      "votes": {
+        "DEMOCRAT": 202970,
+        "REPUBLICAN": 21256,
+        "OTHER": 2858,
+        "LIBERTARIAN": 502
+      },
+      "total": 227586,
+      "winner": "DEMOCRAT"
+    },
+    "FL": {
+      "votes": {
+        "REPUBLICAN": 3964522,
+        "DEMOCRAT": 3583544,
+        "OTHER": 49748,
+        "LIBERTARIAN": 11996
+      },
+      "total": 7609810,
+      "winner": "REPUBLICAN"
+    },
+    "GA": {
+      "votes": {
+        "REPUBLICAN": 1914254,
+        "DEMOCRAT": 1366149,
+        "LIBERTARIAN": 18387,
+        "OTHER": 3085
+      },
+      "total": 3301875,
+      "winner": "REPUBLICAN"
+    },
+    "HI": {
+      "votes": {
+        "DEMOCRAT": 231708,
+        "REPUBLICAN": 194191,
+        "OTHER": 1737,
+        "LIBERTARIAN": 1377
+      },
+      "total": 429013,
+      "winner": "DEMOCRAT"
+    },
+    "ID": {
+      "votes": {
+        "REPUBLICAN": 409235,
+        "DEMOCRAT": 181098,
+        "LIBERTARIAN": 3844,
+        "OTHER": 4199
+      },
+      "total": 598376,
+      "winner": "REPUBLICAN"
+    },
+    "IL": {
+      "votes": {
+        "DEMOCRAT": 2891550,
+        "REPUBLICAN": 2345946,
+        "LIBERTARIAN": 32442,
+        "OTHER": 4384
+      },
+      "total": 5274322,
+      "winner": "DEMOCRAT"
+    },
+    "IN": {
+      "votes": {
+        "REPUBLICAN": 1479438,
+        "DEMOCRAT": 969011,
+        "LIBERTARIAN": 18058,
+        "OTHER": 1495
+      },
+      "total": 2468002,
+      "winner": "REPUBLICAN"
+    },
+    "IA": {
+      "votes": {
+        "REPUBLICAN": 751957,
+        "DEMOCRAT": 741898,
+        "OTHER": 10061,
+        "LIBERTARIAN": 2992
+      },
+      "total": 1506908,
+      "winner": "REPUBLICAN"
+    },
+    "KS": {
+      "votes": {
+        "REPUBLICAN": 736456,
+        "DEMOCRAT": 434993,
+        "OTHER": 12294,
+        "LIBERTARIAN": 4013
+      },
+      "total": 1187756,
+      "winner": "REPUBLICAN"
+    },
+    "KY": {
+      "votes": {
+        "REPUBLICAN": 1069439,
+        "DEMOCRAT": 712733,
+        "OTHER": 11091,
+        "LIBERTARIAN": 2619
+      },
+      "total": 1795882,
+      "winner": "REPUBLICAN"
+    },
+    "LA": {
+      "votes": {
+        "REPUBLICAN": 1102169,
+        "DEMOCRAT": 820299,
+        "OTHER": 17857,
+        "LIBERTARIAN": 2781
+      },
+      "total": 1943106,
+      "winner": "REPUBLICAN"
+    },
+    "ME": {
+      "votes": {
+        "DEMOCRAT": 396842,
+        "REPUBLICAN": 330201,
+        "OTHER": 11744,
+        "LIBERTARIAN": 1965
+      },
+      "total": 740752,
+      "winner": "DEMOCRAT"
+    },
+    "MD": {
+      "votes": {
+        "DEMOCRAT": 1334500,
+        "REPUBLICAN": 1024703,
+        "OTHER": 18941,
+        "LIBERTARIAN": 6094
+      },
+      "total": 2384238,
+      "winner": "DEMOCRAT"
+    },
+    "MA": {
+      "votes": {
+        "DEMOCRAT": 1803800,
+        "REPUBLICAN": 1071109,
+        "OTHER": 37524,
+        "LIBERTARIAN": 15022
+      },
+      "total": 2927455,
+      "winner": "DEMOCRAT"
+    },
+    "MI": {
+      "votes": {
+        "DEMOCRAT": 2479183,
+        "REPUBLICAN": 2313746,
+        "OTHER": 35771,
+        "LIBERTARIAN": 10552
+      },
+      "total": 4839252,
+      "winner": "DEMOCRAT"
+    },
+    "MN": {
+      "votes": {
+        "DEMOCRAT": 1445014,
+        "REPUBLICAN": 1346695,
+        "OTHER": 32039,
+        "LIBERTARIAN": 4639
+      },
+      "total": 2828387,
+      "winner": "DEMOCRAT"
+    },
+    "MS": {
+      "votes": {
+        "REPUBLICAN": 672660,
+        "DEMOCRAT": 457766,
+        "OTHER": 7605,
+        "LIBERTARIAN": 1793
+      },
+      "total": 1139824,
+      "winner": "REPUBLICAN"
+    },
+    "MO": {
+      "votes": {
+        "REPUBLICAN": 1455713,
+        "DEMOCRAT": 1259171,
+        "LIBERTARIAN": 9831,
+        "OTHER": 6649
+      },
+      "total": 2731364,
+      "winner": "REPUBLICAN"
+    },
+    "MT": {
+      "votes": {
+        "REPUBLICAN": 266063,
+        "DEMOCRAT": 173710,
+        "OTHER": 8928,
+        "LIBERTARIAN": 1733
+      },
+      "total": 450434,
+      "winner": "REPUBLICAN"
+    },
+    "NE": {
+      "votes": {
+        "REPUBLICAN": 512814,
+        "DEMOCRAT": 254328,
+        "OTHER": 9003,
+        "LIBERTARIAN": 2041
+      },
+      "total": 778186,
+      "winner": "REPUBLICAN"
+    },
+    "NV": {
+      "votes": {
+        "REPUBLICAN": 418690,
+        "DEMOCRAT": 397190,
+        "OTHER": 10531,
+        "LIBERTARIAN": 3176
+      },
+      "total": 829587,
+      "winner": "REPUBLICAN"
+    },
+    "NH": {
+      "votes": {
+        "DEMOCRAT": 340511,
+        "REPUBLICAN": 331237,
+        "OTHER": 6539
+      },
+      "total": 678287,
+      "winner": "DEMOCRAT"
+    },
+    "NJ": {
+      "votes": {
+        "DEMOCRAT": 1911430,
+        "REPUBLICAN": 1670003,
+        "OTHER": 30258
+      },
+      "total": 3611691,
+      "winner": "DEMOCRAT"
+    },
+    "NM": {
+      "votes": {
+        "REPUBLICAN": 376930,
+        "DEMOCRAT": 370942,
+        "OTHER": 6050,
+        "LIBERTARIAN": 2382
+      },
+      "total": 756304,
+      "winner": "REPUBLICAN"
+    },
+    "NY": {
+      "votes": {
+        "DEMOCRAT": 4180755,
+        "REPUBLICAN": 2806993,
+        "OTHER": 448911,
+        "LIBERTARIAN": 11607
+      },
+      "total": 7448266,
+      "winner": "DEMOCRAT"
+    },
+    "NC": {
+      "votes": {
+        "REPUBLICAN": 1961166,
+        "DEMOCRAT": 1525849,
+        "LIBERTARIAN": 11731,
+        "OTHER": 2261
+      },
+      "total": 3501007,
+      "winner": "REPUBLICAN"
+    },
+    "ND": {
+      "votes": {
+        "REPUBLICAN": 196651,
+        "DEMOCRAT": 111052,
+        "OTHER": 4279,
+        "LIBERTARIAN": 851
+      },
+      "total": 312833,
+      "winner": "REPUBLICAN"
+    },
+    "OH": {
+      "votes": {
+        "REPUBLICAN": 2859764,
+        "DEMOCRAT": 2741165,
+        "OTHER": 26974
+      },
+      "total": 5627903,
+      "winner": "REPUBLICAN"
+    },
+    "OK": {
+      "votes": {
+        "REPUBLICAN": 959792,
+        "DEMOCRAT": 503966
+      },
+      "total": 1463758,
+      "winner": "REPUBLICAN"
+    },
+    "OR": {
+      "votes": {
+        "DEMOCRAT": 943163,
+        "REPUBLICAN": 866831,
+        "OTHER": 19528,
+        "LIBERTARIAN": 7260
+      },
+      "total": 1836782,
+      "winner": "DEMOCRAT"
+    },
+    "PA": {
+      "votes": {
+        "DEMOCRAT": 2938095,
+        "REPUBLICAN": 2793847,
+        "LIBERTARIAN": 21185,
+        "OTHER": 16463
+      },
+      "total": 5769590,
+      "winner": "DEMOCRAT"
+    },
+    "RI": {
+      "votes": {
+        "DEMOCRAT": 259760,
+        "REPUBLICAN": 169046,
+        "OTHER": 7421,
+        "LIBERTARIAN": 907
+      },
+      "total": 437134,
+      "winner": "DEMOCRAT"
+    },
+    "SC": {
+      "votes": {
+        "REPUBLICAN": 937974,
+        "DEMOCRAT": 661669,
+        "OTHER": 14449,
+        "LIBERTARIAN": 3608
+      },
+      "total": 1617700,
+      "winner": "REPUBLICAN"
+    },
+    "SD": {
+      "votes": {
+        "REPUBLICAN": 232584,
+        "DEMOCRAT": 149244,
+        "OTHER": 5423,
+        "LIBERTARIAN": 964
+      },
+      "total": 388215,
+      "winner": "REPUBLICAN"
+    },
+    "TN": {
+      "votes": {
+        "REPUBLICAN": 1384375,
+        "DEMOCRAT": 1036477,
+        "OTHER": 16467
+      },
+      "total": 2437319,
+      "winner": "REPUBLICAN"
+    },
+    "TX": {
+      "votes": {
+        "REPUBLICAN": 4526917,
+        "DEMOCRAT": 2832704,
+        "LIBERTARIAN": 38787,
+        "OTHER": 12341
+      },
+      "total": 7410749,
+      "winner": "REPUBLICAN"
+    },
+    "UT": {
+      "votes": {
+        "REPUBLICAN": 663742,
+        "DEMOCRAT": 241199,
+        "OTHER": 19528,
+        "LIBERTARIAN": 3375
+      },
+      "total": 927844,
+      "winner": "REPUBLICAN"
+    },
+    "VT": {
+      "votes": {
+        "DEMOCRAT": 184067,
+        "REPUBLICAN": 121180,
+        "OTHER": 5960,
+        "LIBERTARIAN": 1102
+      },
+      "total": 312309,
+      "winner": "DEMOCRAT"
+    },
+    "VA": {
+      "votes": {
+        "REPUBLICAN": 1716959,
+        "DEMOCRAT": 1454742,
+        "LIBERTARIAN": 11032,
+        "OTHER": 12682
+      },
+      "total": 3195415,
+      "winner": "REPUBLICAN"
+    },
+    "WA": {
+      "votes": {
+        "DEMOCRAT": 1510201,
+        "REPUBLICAN": 1304894,
+        "OTHER": 32034,
+        "LIBERTARIAN": 11955
+      },
+      "total": 2859084,
+      "winner": "DEMOCRAT"
+    },
+    "WV": {
+      "votes": {
+        "REPUBLICAN": 423778,
+        "DEMOCRAT": 326541,
+        "OTHER": 4068,
+        "LIBERTARIAN": 1405
+      },
+      "total": 755792,
+      "winner": "REPUBLICAN"
+    },
+    "WI": {
+      "votes": {
+        "DEMOCRAT": 1489504,
+        "REPUBLICAN": 1478120,
+        "OTHER": 22919,
+        "LIBERTARIAN": 6464
+      },
+      "total": 2997007,
+      "winner": "DEMOCRAT"
+    },
+    "WY": {
+      "votes": {
+        "REPUBLICAN": 167629,
+        "DEMOCRAT": 70776,
+        "OTHER": 4285,
+        "LIBERTARIAN": 1171
+      },
+      "total": 243861,
+      "winner": "REPUBLICAN"
+    }
+  },
+  "2008": {
+    "AL": {
+      "votes": {
+        "REPUBLICAN": 1266546,
+        "DEMOCRAT": 813479,
+        "OTHER": 19794
+      },
+      "total": 2099819,
+      "winner": "REPUBLICAN"
+    },
+    "AK": {
+      "votes": {
+        "REPUBLICAN": 193841,
+        "DEMOCRAT": 123594,
+        "OTHER": 7173,
+        "LIBERTARIAN": 1589
+      },
+      "total": 326197,
+      "winner": "REPUBLICAN"
+    },
+    "AZ": {
+      "votes": {
+        "REPUBLICAN": 1230111,
+        "DEMOCRAT": 1034707,
+        "LIBERTARIAN": 12555,
+        "OTHER": 16102
+      },
+      "total": 2293475,
+      "winner": "REPUBLICAN"
+    },
+    "AR": {
+      "votes": {
+        "REPUBLICAN": 638017,
+        "DEMOCRAT": 422310,
+        "OTHER": 21514,
+        "LIBERTARIAN": 4776
+      },
+      "total": 1086617,
+      "winner": "REPUBLICAN"
+    },
+    "CA": {
+      "votes": {
+        "DEMOCRAT": 8274473,
+        "REPUBLICAN": 5011781,
+        "OTHER": 208064,
+        "LIBERTARIAN": 67582
+      },
+      "total": 13561900,
+      "winner": "DEMOCRAT"
+    },
+    "CO": {
+      "votes": {
+        "DEMOCRAT": 1288576,
+        "REPUBLICAN": 1073589,
+        "OTHER": 28299,
+        "LIBERTARIAN": 10897
+      },
+      "total": 2401361,
+      "winner": "DEMOCRAT"
+    },
+    "CT": {
+      "votes": {
+        "DEMOCRAT": 997772,
+        "REPUBLICAN": 629428,
+        "OTHER": 19592
+      },
+      "total": 1646792,
+      "winner": "DEMOCRAT"
+    },
+    "DE": {
+      "votes": {
+        "DEMOCRAT": 255459,
+        "REPUBLICAN": 152374,
+        "OTHER": 3470,
+        "LIBERTARIAN": 1109
+      },
+      "total": 412412,
+      "winner": "DEMOCRAT"
+    },
+    "DC": {
+      "votes": {
+        "DEMOCRAT": 245800,
+        "REPUBLICAN": 17367,
+        "OTHER": 2686
+      },
+      "total": 265853,
+      "winner": "DEMOCRAT"
+    },
+    "FL": {
+      "votes": {
+        "DEMOCRAT": 4282074,
+        "REPUBLICAN": 4045624,
+        "OTHER": 45828,
+        "LIBERTARIAN": 17218
+      },
+      "total": 8390744,
+      "winner": "DEMOCRAT"
+    },
+    "GA": {
+      "votes": {
+        "REPUBLICAN": 2048759,
+        "DEMOCRAT": 1844123,
+        "LIBERTARIAN": 28731,
+        "OTHER": 2873
+      },
+      "total": 3924486,
+      "winner": "REPUBLICAN"
+    },
+    "HI": {
+      "votes": {
+        "DEMOCRAT": 325871,
+        "REPUBLICAN": 120566,
+        "OTHER": 8313,
+        "LIBERTARIAN": 1314
+      },
+      "total": 456064,
+      "winner": "DEMOCRAT"
+    },
+    "ID": {
+      "votes": {
+        "REPUBLICAN": 403012,
+        "DEMOCRAT": 236440,
+        "OTHER": 12012,
+        "LIBERTARIAN": 3658
+      },
+      "total": 655122,
+      "winner": "REPUBLICAN"
+    },
+    "IL": {
+      "votes": {
+        "DEMOCRAT": 3419348,
+        "REPUBLICAN": 2031179,
+        "OTHER": 52202,
+        "LIBERTARIAN": 19642
+      },
+      "total": 5522371,
+      "winner": "DEMOCRAT"
+    },
+    "IN": {
+      "votes": {
+        "DEMOCRAT": 1374039,
+        "REPUBLICAN": 1345648,
+        "LIBERTARIAN": 29257,
+        "OTHER": 2110
+      },
+      "total": 2751054,
+      "winner": "DEMOCRAT"
+    },
+    "IA": {
+      "votes": {
+        "DEMOCRAT": 828940,
+        "REPUBLICAN": 682379,
+        "OTHER": 21214,
+        "LIBERTARIAN": 4590
+      },
+      "total": 1537123,
+      "winner": "DEMOCRAT"
+    },
+    "KS": {
+      "votes": {
+        "REPUBLICAN": 699655,
+        "DEMOCRAT": 514765,
+        "OTHER": 14746,
+        "LIBERTARIAN": 6706
+      },
+      "total": 1235872,
+      "winner": "REPUBLICAN"
+    },
+    "KY": {
+      "votes": {
+        "REPUBLICAN": 1048462,
+        "DEMOCRAT": 751985,
+        "OTHER": 20184,
+        "LIBERTARIAN": 5989
+      },
+      "total": 1826620,
+      "winner": "REPUBLICAN"
+    },
+    "LA": {
+      "votes": {
+        "REPUBLICAN": 1148275,
+        "DEMOCRAT": 782989,
+        "OTHER": 29497
+      },
+      "total": 1960761,
+      "winner": "REPUBLICAN"
+    },
+    "ME": {
+      "votes": {
+        "DEMOCRAT": 421923,
+        "REPUBLICAN": 295273,
+        "OTHER": 13967
+      },
+      "total": 731163,
+      "winner": "DEMOCRAT"
+    },
+    "MD": {
+      "votes": {
+        "DEMOCRAT": 1629467,
+        "REPUBLICAN": 959862,
+        "OTHER": 32425,
+        "LIBERTARIAN": 9842
+      },
+      "total": 2631596,
+      "winner": "DEMOCRAT"
+    },
+    "MA": {
+      "votes": {
+        "DEMOCRAT": 1904097,
+        "REPUBLICAN": 1108854,
+        "OTHER": 76855,
+        "LIBERTARIAN": 13189
+      },
+      "total": 3102995,
+      "winner": "DEMOCRAT"
+    },
+    "MI": {
+      "votes": {
+        "DEMOCRAT": 2872579,
+        "REPUBLICAN": 2048639,
+        "OTHER": 56662,
+        "LIBERTARIAN": 23716
+      },
+      "total": 5001596,
+      "winner": "DEMOCRAT"
+    },
+    "MN": {
+      "votes": {
+        "DEMOCRAT": 1573354,
+        "REPUBLICAN": 1275409,
+        "OTHER": 52432,
+        "LIBERTARIAN": 9174
+      },
+      "total": 2910369,
+      "winner": "DEMOCRAT"
+    },
+    "MS": {
+      "votes": {
+        "REPUBLICAN": 724597,
+        "DEMOCRAT": 554662,
+        "OTHER": 8077,
+        "LIBERTARIAN": 2529
+      },
+      "total": 1289865,
+      "winner": "REPUBLICAN"
+    },
+    "MO": {
+      "votes": {
+        "REPUBLICAN": 1445814,
+        "DEMOCRAT": 1441911,
+        "OTHER": 26094,
+        "LIBERTARIAN": 11386
+      },
+      "total": 2925205,
+      "winner": "REPUBLICAN"
+    },
+    "MT": {
+      "votes": {
+        "REPUBLICAN": 242763,
+        "DEMOCRAT": 231667,
+        "OTHER": 14324,
+        "LIBERTARIAN": 1355
+      },
+      "total": 490109,
+      "winner": "REPUBLICAN"
+    },
+    "NE": {
+      "votes": {
+        "REPUBLICAN": 452979,
+        "DEMOCRAT": 333319,
+        "OTHER": 12243,
+        "LIBERTARIAN": 2740
+      },
+      "total": 801281,
+      "winner": "REPUBLICAN"
+    },
+    "NV": {
+      "votes": {
+        "DEMOCRAT": 533736,
+        "REPUBLICAN": 412827,
+        "OTHER": 17022,
+        "LIBERTARIAN": 4263
+      },
+      "total": 967848,
+      "winner": "DEMOCRAT"
+    },
+    "NH": {
+      "votes": {
+        "DEMOCRAT": 384826,
+        "REPUBLICAN": 316534,
+        "OTHER": 6862,
+        "LIBERTARIAN": 2748
+      },
+      "total": 710970,
+      "winner": "DEMOCRAT"
+    },
+    "NJ": {
+      "votes": {
+        "DEMOCRAT": 2215422,
+        "REPUBLICAN": 1613207,
+        "OTHER": 31167,
+        "LIBERTARIAN": 8441
+      },
+      "total": 3868237,
+      "winner": "DEMOCRAT"
+    },
+    "NM": {
+      "votes": {
+        "DEMOCRAT": 472422,
+        "REPUBLICAN": 346832,
+        "OTHER": 8476,
+        "LIBERTARIAN": 2428
+      },
+      "total": 830158,
+      "winner": "DEMOCRAT"
+    },
+    "NY": {
+      "votes": {
+        "DEMOCRAT": 4645332,
+        "REPUBLICAN": 2418323,
+        "OTHER": 638768,
+        "LIBERTARIAN": 19596
+      },
+      "total": 7722019,
+      "winner": "DEMOCRAT"
+    },
+    "NC": {
+      "votes": {
+        "DEMOCRAT": 2142651,
+        "REPUBLICAN": 2128474,
+        "LIBERTARIAN": 25722,
+        "OTHER": 14004
+      },
+      "total": 4310851,
+      "winner": "DEMOCRAT"
+    },
+    "ND": {
+      "votes": {
+        "REPUBLICAN": 168601,
+        "DEMOCRAT": 141278,
+        "OTHER": 5388,
+        "LIBERTARIAN": 1354
+      },
+      "total": 316621,
+      "winner": "REPUBLICAN"
+    },
+    "OH": {
+      "votes": {
+        "DEMOCRAT": 2940044,
+        "REPUBLICAN": 2677820,
+        "OTHER": 70569,
+        "LIBERTARIAN": 19917
+      },
+      "total": 5708350,
+      "winner": "DEMOCRAT"
+    },
+    "OK": {
+      "votes": {
+        "REPUBLICAN": 960165,
+        "DEMOCRAT": 502496
+      },
+      "total": 1462661,
+      "winner": "REPUBLICAN"
+    },
+    "OR": {
+      "votes": {
+        "DEMOCRAT": 1037291,
+        "REPUBLICAN": 738475,
+        "OTHER": 44463,
+        "LIBERTARIAN": 7635
+      },
+      "total": 1827864,
+      "winner": "DEMOCRAT"
+    },
+    "PA": {
+      "votes": {
+        "DEMOCRAT": 3276363,
+        "REPUBLICAN": 2655885,
+        "OTHER": 61112,
+        "LIBERTARIAN": 19912
+      },
+      "total": 6013272,
+      "winner": "DEMOCRAT"
+    },
+    "RI": {
+      "votes": {
+        "DEMOCRAT": 296571,
+        "REPUBLICAN": 165391,
+        "OTHER": 8422,
+        "LIBERTARIAN": 1382
+      },
+      "total": 471766,
+      "winner": "DEMOCRAT"
+    },
+    "SC": {
+      "votes": {
+        "REPUBLICAN": 1034896,
+        "DEMOCRAT": 862449,
+        "LIBERTARIAN": 7283,
+        "OTHER": 16341
+      },
+      "total": 1920969,
+      "winner": "REPUBLICAN"
+    },
+    "SD": {
+      "votes": {
+        "REPUBLICAN": 203054,
+        "DEMOCRAT": 170924,
+        "OTHER": 6162,
+        "LIBERTARIAN": 1835
+      },
+      "total": 381975,
+      "winner": "REPUBLICAN"
+    },
+    "TN": {
+      "votes": {
+        "REPUBLICAN": 1479178,
+        "DEMOCRAT": 1087437,
+        "OTHER": 33134
+      },
+      "total": 2599749,
+      "winner": "REPUBLICAN"
+    },
+    "TX": {
+      "votes": {
+        "REPUBLICAN": 4479328,
+        "DEMOCRAT": 3528633,
+        "LIBERTARIAN": 56116,
+        "OTHER": 13718
+      },
+      "total": 8077795,
+      "winner": "REPUBLICAN"
+    },
+    "UT": {
+      "votes": {
+        "REPUBLICAN": 596030,
+        "DEMOCRAT": 327670,
+        "OTHER": 21704,
+        "LIBERTARIAN": 6966
+      },
+      "total": 952370,
+      "winner": "REPUBLICAN"
+    },
+    "VT": {
+      "votes": {
+        "DEMOCRAT": 219262,
+        "REPUBLICAN": 98974,
+        "OTHER": 5743,
+        "LIBERTARIAN": 1067
+      },
+      "total": 325046,
+      "winner": "DEMOCRAT"
+    },
+    "VA": {
+      "votes": {
+        "DEMOCRAT": 1959532,
+        "REPUBLICAN": 1725005,
+        "OTHER": 27656,
+        "LIBERTARIAN": 11067
+      },
+      "total": 3723260,
+      "winner": "DEMOCRAT"
+    },
+    "WA": {
+      "votes": {
+        "DEMOCRAT": 1750848,
+        "REPUBLICAN": 1229216,
+        "OTHER": 44086,
+        "LIBERTARIAN": 12728
+      },
+      "total": 3036878,
+      "winner": "DEMOCRAT"
+    },
+    "WV": {
+      "votes": {
+        "REPUBLICAN": 397466,
+        "DEMOCRAT": 303857,
+        "OTHER": 12128
+      },
+      "total": 713451,
+      "winner": "REPUBLICAN"
+    },
+    "WI": {
+      "votes": {
+        "DEMOCRAT": 1677211,
+        "REPUBLICAN": 1262393,
+        "OTHER": 34955,
+        "LIBERTARIAN": 8858
+      },
+      "total": 2983417,
+      "winner": "DEMOCRAT"
+    },
+    "WY": {
+      "votes": {
+        "REPUBLICAN": 164958,
+        "DEMOCRAT": 82868,
+        "OTHER": 5484,
+        "LIBERTARIAN": 1594
+      },
+      "total": 254904,
+      "winner": "REPUBLICAN"
+    }
+  },
+  "2012": {
+    "AL": {
+      "votes": {
+        "REPUBLICAN": 1255925,
+        "DEMOCRAT": 795696,
+        "OTHER": 22717
+      },
+      "total": 2074338,
+      "winner": "REPUBLICAN"
+    },
+    "AK": {
+      "votes": {
+        "REPUBLICAN": 164676,
+        "DEMOCRAT": 122640,
+        "LIBERTARIAN": 7392,
+        "OTHER": 5787
+      },
+      "total": 300495,
+      "winner": "REPUBLICAN"
+    },
+    "AZ": {
+      "votes": {
+        "REPUBLICAN": 1233654,
+        "DEMOCRAT": 1025232,
+        "LIBERTARIAN": 32100,
+        "OTHER": 8268
+      },
+      "total": 2299254,
+      "winner": "REPUBLICAN"
+    },
+    "AR": {
+      "votes": {
+        "REPUBLICAN": 647744,
+        "DEMOCRAT": 394409,
+        "LIBERTARIAN": 16276,
+        "OTHER": 11039
+      },
+      "total": 1069468,
+      "winner": "REPUBLICAN"
+    },
+    "CA": {
+      "votes": {
+        "DEMOCRAT": 7854285,
+        "REPUBLICAN": 4839958,
+        "LIBERTARIAN": 143221,
+        "OTHER": 201083
+      },
+      "total": 13038547,
+      "winner": "DEMOCRAT"
+    },
+    "CO": {
+      "votes": {
+        "DEMOCRAT": 1323101,
+        "REPUBLICAN": 1185243,
+        "LIBERTARIAN": 35545,
+        "OTHER": 25627
+      },
+      "total": 2569516,
+      "winner": "DEMOCRAT"
+    },
+    "CT": {
+      "votes": {
+        "DEMOCRAT": 905083,
+        "REPUBLICAN": 634892,
+        "LIBERTARIAN": 12340,
+        "OTHER": 5889
+      },
+      "total": 1558204,
+      "winner": "DEMOCRAT"
+    },
+    "DE": {
+      "votes": {
+        "DEMOCRAT": 242584,
+        "REPUBLICAN": 165484,
+        "LIBERTARIAN": 3882,
+        "OTHER": 1940
+      },
+      "total": 413890,
+      "winner": "DEMOCRAT"
+    },
+    "DC": {
+      "votes": {
+        "DEMOCRAT": 267070,
+        "REPUBLICAN": 21381,
+        "OTHER": 3230,
+        "LIBERTARIAN": 2083
+      },
+      "total": 293764,
+      "winner": "DEMOCRAT"
+    },
+    "FL": {
+      "votes": {
+        "DEMOCRAT": 4237756,
+        "REPUBLICAN": 4163447,
+        "LIBERTARIAN": 44726,
+        "OTHER": 28250
+      },
+      "total": 8474179,
+      "winner": "DEMOCRAT"
+    },
+    "GA": {
+      "votes": {
+        "REPUBLICAN": 2078688,
+        "DEMOCRAT": 1773827,
+        "LIBERTARIAN": 45324
+      },
+      "total": 3897839,
+      "winner": "REPUBLICAN"
+    },
+    "HI": {
+      "votes": {
+        "DEMOCRAT": 306658,
+        "REPUBLICAN": 121015,
+        "LIBERTARIAN": 3840,
+        "OTHER": 5646
+      },
+      "total": 437159,
+      "winner": "DEMOCRAT"
+    },
+    "ID": {
+      "votes": {
+        "REPUBLICAN": 420911,
+        "DEMOCRAT": 212787,
+        "LIBERTARIAN": 9453,
+        "OTHER": 9123
+      },
+      "total": 652274,
+      "winner": "REPUBLICAN"
+    },
+    "IL": {
+      "votes": {
+        "DEMOCRAT": 3019512,
+        "REPUBLICAN": 2135216,
+        "LIBERTARIAN": 56229,
+        "OTHER": 31057
+      },
+      "total": 5242014,
+      "winner": "DEMOCRAT"
+    },
+    "IN": {
+      "votes": {
+        "REPUBLICAN": 1420543,
+        "DEMOCRAT": 1152887,
+        "LIBERTARIAN": 50111,
+        "OTHER": 993
+      },
+      "total": 2624534,
+      "winner": "REPUBLICAN"
+    },
+    "IA": {
+      "votes": {
+        "DEMOCRAT": 822544,
+        "REPUBLICAN": 730617,
+        "LIBERTARIAN": 12926,
+        "OTHER": 16093
+      },
+      "total": 1582180,
+      "winner": "DEMOCRAT"
+    },
+    "KS": {
+      "votes": {
+        "REPUBLICAN": 692634,
+        "DEMOCRAT": 440726,
+        "LIBERTARIAN": 20456,
+        "OTHER": 6155
+      },
+      "total": 1159971,
+      "winner": "REPUBLICAN"
+    },
+    "KY": {
+      "votes": {
+        "REPUBLICAN": 1087190,
+        "DEMOCRAT": 679370,
+        "LIBERTARIAN": 17063,
+        "OTHER": 13589
+      },
+      "total": 1797212,
+      "winner": "REPUBLICAN"
+    },
+    "LA": {
+      "votes": {
+        "REPUBLICAN": 1152262,
+        "DEMOCRAT": 809141,
+        "LIBERTARIAN": 18157,
+        "OTHER": 14505
+      },
+      "total": 1994065,
+      "winner": "REPUBLICAN"
+    },
+    "ME": {
+      "votes": {
+        "DEMOCRAT": 401306,
+        "REPUBLICAN": 292276,
+        "OTHER": 21824,
+        "LIBERTARIAN": 9352
+      },
+      "total": 724758,
+      "winner": "DEMOCRAT"
+    },
+    "MD": {
+      "votes": {
+        "DEMOCRAT": 1677844,
+        "REPUBLICAN": 971869,
+        "LIBERTARIAN": 30195,
+        "OTHER": 27419
+      },
+      "total": 2707327,
+      "winner": "DEMOCRAT"
+    },
+    "MA": {
+      "votes": {
+        "DEMOCRAT": 1921290,
+        "REPUBLICAN": 1188314,
+        "LIBERTARIAN": 30920,
+        "OTHER": 43672
+      },
+      "total": 3184196,
+      "winner": "DEMOCRAT"
+    },
+    "MI": {
+      "votes": {
+        "DEMOCRAT": 2564569,
+        "REPUBLICAN": 2115256,
+        "OTHER": 51136
+      },
+      "total": 4730961,
+      "winner": "DEMOCRAT"
+    },
+    "MN": {
+      "votes": {
+        "DEMOCRAT": 1546167,
+        "REPUBLICAN": 1320225,
+        "LIBERTARIAN": 35098,
+        "OTHER": 35071
+      },
+      "total": 2936561,
+      "winner": "DEMOCRAT"
+    },
+    "MS": {
+      "votes": {
+        "REPUBLICAN": 710746,
+        "DEMOCRAT": 562949,
+        "LIBERTARIAN": 6676,
+        "OTHER": 5213
+      },
+      "total": 1285584,
+      "winner": "REPUBLICAN"
+    },
+    "MO": {
+      "votes": {
+        "REPUBLICAN": 1482440,
+        "DEMOCRAT": 1223796,
+        "LIBERTARIAN": 43151,
+        "OTHER": 7936
+      },
+      "total": 2757323,
+      "winner": "REPUBLICAN"
+    },
+    "MT": {
+      "votes": {
+        "REPUBLICAN": 267928,
+        "DEMOCRAT": 201839,
+        "LIBERTARIAN": 14165,
+        "OTHER": 116
+      },
+      "total": 484048,
+      "winner": "REPUBLICAN"
+    },
+    "NE": {
+      "votes": {
+        "REPUBLICAN": 475064,
+        "DEMOCRAT": 302081,
+        "LIBERTARIAN": 11109,
+        "OTHER": 6125
+      },
+      "total": 794379,
+      "winner": "REPUBLICAN"
+    },
+    "NV": {
+      "votes": {
+        "DEMOCRAT": 531373,
+        "REPUBLICAN": 463567,
+        "LIBERTARIAN": 10968,
+        "OTHER": 9010
+      },
+      "total": 1014918,
+      "winner": "DEMOCRAT"
+    },
+    "NH": {
+      "votes": {
+        "DEMOCRAT": 369561,
+        "REPUBLICAN": 329918,
+        "LIBERTARIAN": 8212,
+        "OTHER": 3281
+      },
+      "total": 710972,
+      "winner": "DEMOCRAT"
+    },
+    "NJ": {
+      "votes": {
+        "DEMOCRAT": 2122786,
+        "REPUBLICAN": 1478088,
+        "LIBERTARIAN": 21035,
+        "OTHER": 16590
+      },
+      "total": 3638499,
+      "winner": "DEMOCRAT"
+    },
+    "NM": {
+      "votes": {
+        "DEMOCRAT": 415335,
+        "REPUBLICAN": 335788,
+        "LIBERTARIAN": 27788,
+        "OTHER": 4847
+      },
+      "total": 783758,
+      "winner": "DEMOCRAT"
+    },
+    "NY": {
+      "votes": {
+        "DEMOCRAT": 4324228,
+        "REPUBLICAN": 2223397,
+        "OTHER": 522067,
+        "LIBERTARIAN": 47092
+      },
+      "total": 7116784,
+      "winner": "DEMOCRAT"
+    },
+    "NC": {
+      "votes": {
+        "REPUBLICAN": 2270395,
+        "DEMOCRAT": 2178391,
+        "LIBERTARIAN": 44515,
+        "OTHER": 12071
+      },
+      "total": 4505372,
+      "winner": "REPUBLICAN"
+    },
+    "ND": {
+      "votes": {
+        "REPUBLICAN": 188320,
+        "DEMOCRAT": 124966,
+        "LIBERTARIAN": 5238,
+        "OTHER": 4408
+      },
+      "total": 322932,
+      "winner": "REPUBLICAN"
+    },
+    "OH": {
+      "votes": {
+        "DEMOCRAT": 2827621,
+        "REPUBLICAN": 2661407,
+        "LIBERTARIAN": 49493,
+        "OTHER": 42301
+      },
+      "total": 5580822,
+      "winner": "DEMOCRAT"
+    },
+    "OK": {
+      "votes": {
+        "REPUBLICAN": 891325,
+        "DEMOCRAT": 443547
+      },
+      "total": 1334872,
+      "winner": "REPUBLICAN"
+    },
+    "OR": {
+      "votes": {
+        "DEMOCRAT": 970488,
+        "REPUBLICAN": 754175,
+        "LIBERTARIAN": 24089,
+        "OTHER": 40518
+      },
+      "total": 1789270,
+      "winner": "DEMOCRAT"
+    },
+    "PA": {
+      "votes": {
+        "DEMOCRAT": 2990274,
+        "REPUBLICAN": 2680434,
+        "LIBERTARIAN": 49991,
+        "OTHER": 21341
+      },
+      "total": 5742040,
+      "winner": "DEMOCRAT"
+    },
+    "RI": {
+      "votes": {
+        "DEMOCRAT": 279677,
+        "REPUBLICAN": 157204,
+        "LIBERTARIAN": 4388,
+        "OTHER": 4780
+      },
+      "total": 446049,
+      "winner": "DEMOCRAT"
+    },
+    "SC": {
+      "votes": {
+        "REPUBLICAN": 1071645,
+        "DEMOCRAT": 865941,
+        "LIBERTARIAN": 16321,
+        "OTHER": 10211
+      },
+      "total": 1964118,
+      "winner": "REPUBLICAN"
+    },
+    "SD": {
+      "votes": {
+        "REPUBLICAN": 210610,
+        "DEMOCRAT": 145039,
+        "LIBERTARIAN": 5795,
+        "OTHER": 2371
+      },
+      "total": 363815,
+      "winner": "REPUBLICAN"
+    },
+    "TN": {
+      "votes": {
+        "REPUBLICAN": 1462330,
+        "DEMOCRAT": 960709,
+        "OTHER": 35538
+      },
+      "total": 2458577,
+      "winner": "REPUBLICAN"
+    },
+    "TX": {
+      "votes": {
+        "REPUBLICAN": 4569843,
+        "DEMOCRAT": 3308124,
+        "LIBERTARIAN": 88580,
+        "OTHER": 27304
+      },
+      "total": 7993851,
+      "winner": "REPUBLICAN"
+    },
+    "UT": {
+      "votes": {
+        "REPUBLICAN": 740600,
+        "DEMOCRAT": 251813,
+        "LIBERTARIAN": 12572,
+        "OTHER": 12455
+      },
+      "total": 1017440,
+      "winner": "REPUBLICAN"
+    },
+    "VT": {
+      "votes": {
+        "DEMOCRAT": 199239,
+        "REPUBLICAN": 92698,
+        "LIBERTARIAN": 3487,
+        "OTHER": 3866
+      },
+      "total": 299290,
+      "winner": "DEMOCRAT"
+    },
+    "VA": {
+      "votes": {
+        "DEMOCRAT": 1971820,
+        "REPUBLICAN": 1822522,
+        "LIBERTARIAN": 31216,
+        "OTHER": 28931
+      },
+      "total": 3854489,
+      "winner": "DEMOCRAT"
+    },
+    "WA": {
+      "votes": {
+        "DEMOCRAT": 1755396,
+        "REPUBLICAN": 1290670,
+        "LIBERTARIAN": 42202,
+        "OTHER": 37248
+      },
+      "total": 3125516,
+      "winner": "DEMOCRAT"
+    },
+    "WV": {
+      "votes": {
+        "REPUBLICAN": 417655,
+        "DEMOCRAT": 238269,
+        "LIBERTARIAN": 6302,
+        "OTHER": 8212
+      },
+      "total": 670438,
+      "winner": "REPUBLICAN"
+    },
+    "WI": {
+      "votes": {
+        "DEMOCRAT": 1620985,
+        "REPUBLICAN": 1410966,
+        "OTHER": 39483
+      },
+      "total": 3071434,
+      "winner": "DEMOCRAT"
+    },
+    "WY": {
+      "votes": {
+        "REPUBLICAN": 170962,
+        "DEMOCRAT": 69286,
+        "LIBERTARIAN": 5326,
+        "OTHER": 5127
+      },
+      "total": 250701,
+      "winner": "REPUBLICAN"
+    }
+  },
+  "2016": {
+    "AL": {
+      "votes": {
+        "REPUBLICAN": 1318255,
+        "DEMOCRAT": 729547,
+        "LIBERTARIAN": 44467,
+        "OTHER": 31103
+      },
+      "total": 2123372,
+      "winner": "REPUBLICAN"
+    },
+    "AK": {
+      "votes": {
+        "REPUBLICAN": 163387,
+        "DEMOCRAT": 116454,
+        "LIBERTARIAN": 18725,
+        "OTHER": 20042
+      },
+      "total": 318608,
+      "winner": "REPUBLICAN"
+    },
+    "AZ": {
+      "votes": {
+        "REPUBLICAN": 1252401,
+        "DEMOCRAT": 1161209,
+        "LIBERTARIAN": 106327,
+        "OTHER": 53228
+      },
+      "total": 2573165,
+      "winner": "REPUBLICAN"
+    },
+    "AR": {
+      "votes": {
+        "REPUBLICAN": 684872,
+        "DEMOCRAT": 380494,
+        "LIBERTARIAN": 29829,
+        "OTHER": 35440
+      },
+      "total": 1130635,
+      "winner": "REPUBLICAN"
+    },
+    "CA": {
+      "votes": {
+        "DEMOCRAT": 8753788,
+        "REPUBLICAN": 4483810,
+        "LIBERTARIAN": 478500,
+        "OTHER": 465497
+      },
+      "total": 14181595,
+      "winner": "DEMOCRAT"
+    },
+    "CO": {
+      "votes": {
+        "DEMOCRAT": 1338870,
+        "REPUBLICAN": 1202484,
+        "LIBERTARIAN": 144121,
+        "OTHER": 94745
+      },
+      "total": 2780220,
+      "winner": "DEMOCRAT"
+    },
+    "CT": {
+      "votes": {
+        "DEMOCRAT": 897572,
+        "REPUBLICAN": 673215,
+        "LIBERTARIAN": 48676,
+        "OTHER": 25457
+      },
+      "total": 1644920,
+      "winner": "DEMOCRAT"
+    },
+    "DE": {
+      "votes": {
+        "DEMOCRAT": 235603,
+        "REPUBLICAN": 185127,
+        "LIBERTARIAN": 14757,
+        "OTHER": 6103
+      },
+      "total": 441590,
+      "winner": "DEMOCRAT"
+    },
+    "DC": {
+      "votes": {
+        "DEMOCRAT": 282830,
+        "REPUBLICAN": 12723,
+        "OTHER": 12116,
+        "LIBERTARIAN": 4906
+      },
+      "total": 312575,
+      "winner": "DEMOCRAT"
+    },
+    "FL": {
+      "votes": {
+        "REPUBLICAN": 4617886,
+        "DEMOCRAT": 4504975,
+        "LIBERTARIAN": 207043,
+        "OTHER": 90135
+      },
+      "total": 9420039,
+      "winner": "REPUBLICAN"
+    },
+    "GA": {
+      "votes": {
+        "REPUBLICAN": 2089104,
+        "DEMOCRAT": 1877963,
+        "LIBERTARIAN": 125306,
+        "OTHER": 22359
+      },
+      "total": 4114732,
+      "winner": "REPUBLICAN"
+    },
+    "HI": {
+      "votes": {
+        "DEMOCRAT": 266891,
+        "REPUBLICAN": 128847,
+        "LIBERTARIAN": 15954,
+        "OTHER": 25972
+      },
+      "total": 437664,
+      "winner": "DEMOCRAT"
+    },
+    "ID": {
+      "votes": {
+        "REPUBLICAN": 409055,
+        "DEMOCRAT": 189765,
+        "OTHER": 63104,
+        "LIBERTARIAN": 28331
+      },
+      "total": 690255,
+      "winner": "REPUBLICAN"
+    },
+    "IL": {
+      "votes": {
+        "DEMOCRAT": 3090729,
+        "REPUBLICAN": 2146015,
+        "LIBERTARIAN": 209596,
+        "OTHER": 90084
+      },
+      "total": 5536424,
+      "winner": "DEMOCRAT"
+    },
+    "IN": {
+      "votes": {
+        "REPUBLICAN": 1557286,
+        "DEMOCRAT": 1033126,
+        "LIBERTARIAN": 133993,
+        "OTHER": 10553
+      },
+      "total": 2734958,
+      "winner": "REPUBLICAN"
+    },
+    "IA": {
+      "votes": {
+        "REPUBLICAN": 800983,
+        "DEMOCRAT": 653669,
+        "LIBERTARIAN": 59186,
+        "OTHER": 51742
+      },
+      "total": 1565580,
+      "winner": "REPUBLICAN"
+    },
+    "KS": {
+      "votes": {
+        "REPUBLICAN": 671018,
+        "DEMOCRAT": 427005,
+        "LIBERTARIAN": 55406,
+        "OTHER": 30973
+      },
+      "total": 1184402,
+      "winner": "REPUBLICAN"
+    },
+    "KY": {
+      "votes": {
+        "REPUBLICAN": 1202971,
+        "DEMOCRAT": 628854,
+        "LIBERTARIAN": 53752,
+        "OTHER": 38572
+      },
+      "total": 1924149,
+      "winner": "REPUBLICAN"
+    },
+    "LA": {
+      "votes": {
+        "REPUBLICAN": 1178638,
+        "DEMOCRAT": 780154,
+        "LIBERTARIAN": 37978,
+        "OTHER": 32262
+      },
+      "total": 2029032,
+      "winner": "REPUBLICAN"
+    },
+    "ME": {
+      "votes": {
+        "DEMOCRAT": 357735,
+        "REPUBLICAN": 335593,
+        "LIBERTARIAN": 38105,
+        "OTHER": 40459
+      },
+      "total": 771892,
+      "winner": "DEMOCRAT"
+    },
+    "MD": {
+      "votes": {
+        "DEMOCRAT": 1678006,
+        "REPUBLICAN": 943428,
+        "LIBERTARIAN": 79605,
+        "OTHER": 80407
+      },
+      "total": 2781446,
+      "winner": "DEMOCRAT"
+    },
+    "MA": {
+      "votes": {
+        "DEMOCRAT": 1995196,
+        "REPUBLICAN": 1090893,
+        "LIBERTARIAN": 138018,
+        "OTHER": 154714
+      },
+      "total": 3378821,
+      "winner": "DEMOCRAT"
+    },
+    "MI": {
+      "votes": {
+        "REPUBLICAN": 2279543,
+        "DEMOCRAT": 2268839,
+        "LIBERTARIAN": 172136,
+        "OTHER": 78766
+      },
+      "total": 4799284,
+      "winner": "REPUBLICAN"
+    },
+    "MN": {
+      "votes": {
+        "DEMOCRAT": 1367705,
+        "REPUBLICAN": 1322949,
+        "LIBERTARIAN": 112972,
+        "OTHER": 141156
+      },
+      "total": 2944782,
+      "winner": "DEMOCRAT"
+    },
+    "MS": {
+      "votes": {
+        "REPUBLICAN": 700714,
+        "DEMOCRAT": 485131,
+        "LIBERTARIAN": 14435,
+        "OTHER": 9077
+      },
+      "total": 1209357,
+      "winner": "REPUBLICAN"
+    },
+    "MO": {
+      "votes": {
+        "REPUBLICAN": 1594511,
+        "DEMOCRAT": 1071068,
+        "LIBERTARIAN": 97359,
+        "OTHER": 45667
+      },
+      "total": 2808605,
+      "winner": "REPUBLICAN"
+    },
+    "MT": {
+      "votes": {
+        "REPUBLICAN": 279240,
+        "DEMOCRAT": 177709,
+        "LIBERTARIAN": 28037,
+        "OTHER": 9540
+      },
+      "total": 494526,
+      "winner": "REPUBLICAN"
+    },
+    "NE": {
+      "votes": {
+        "REPUBLICAN": 495961,
+        "DEMOCRAT": 284494,
+        "LIBERTARIAN": 38946,
+        "OTHER": 24826
+      },
+      "total": 844227,
+      "winner": "REPUBLICAN"
+    },
+    "NV": {
+      "votes": {
+        "DEMOCRAT": 539260,
+        "REPUBLICAN": 512058,
+        "LIBERTARIAN": 37384,
+        "OTHER": 36683
+      },
+      "total": 1125385,
+      "winner": "DEMOCRAT"
+    },
+    "NH": {
+      "votes": {
+        "DEMOCRAT": 348526,
+        "REPUBLICAN": 345790,
+        "LIBERTARIAN": 30777,
+        "OTHER": 19203
+      },
+      "total": 744296,
+      "winner": "DEMOCRAT"
+    },
+    "NJ": {
+      "votes": {
+        "DEMOCRAT": 2148278,
+        "REPUBLICAN": 1601933,
+        "LIBERTARIAN": 72477,
+        "OTHER": 51358
+      },
+      "total": 3874046,
+      "winner": "DEMOCRAT"
+    },
+    "NM": {
+      "votes": {
+        "DEMOCRAT": 385234,
+        "REPUBLICAN": 319667,
+        "LIBERTARIAN": 74541,
+        "OTHER": 18877
+      },
+      "total": 798319,
+      "winner": "DEMOCRAT"
+    },
+    "NY": {
+      "votes": {
+        "DEMOCRAT": 4379789,
+        "REPUBLICAN": 2527142,
+        "OTHER": 837711,
+        "LIBERTARIAN": 57442
+      },
+      "total": 7802084,
+      "winner": "DEMOCRAT"
+    },
+    "NC": {
+      "votes": {
+        "REPUBLICAN": 2362631,
+        "DEMOCRAT": 2189316,
+        "LIBERTARIAN": 130126,
+        "OTHER": 59491
+      },
+      "total": 4741564,
+      "winner": "REPUBLICAN"
+    },
+    "ND": {
+      "votes": {
+        "REPUBLICAN": 216794,
+        "DEMOCRAT": 93758,
+        "LIBERTARIAN": 21434,
+        "OTHER": 12374
+      },
+      "total": 344360,
+      "winner": "REPUBLICAN"
+    },
+    "OH": {
+      "votes": {
+        "REPUBLICAN": 2841005,
+        "DEMOCRAT": 2394164,
+        "OTHER": 261318
+      },
+      "total": 5496487,
+      "winner": "REPUBLICAN"
+    },
+    "OK": {
+      "votes": {
+        "REPUBLICAN": 949136,
+        "DEMOCRAT": 420375,
+        "LIBERTARIAN": 83481
+      },
+      "total": 1452992,
+      "winner": "REPUBLICAN"
+    },
+    "OR": {
+      "votes": {
+        "DEMOCRAT": 1002106,
+        "REPUBLICAN": 782403,
+        "LIBERTARIAN": 94231,
+        "OTHER": 122596
+      },
+      "total": 2001336,
+      "winner": "DEMOCRAT"
+    },
+    "PA": {
+      "votes": {
+        "REPUBLICAN": 2970733,
+        "DEMOCRAT": 2926441,
+        "LIBERTARIAN": 146715,
+        "OTHER": 71513
+      },
+      "total": 6115402,
+      "winner": "REPUBLICAN"
+    },
+    "RI": {
+      "votes": {
+        "DEMOCRAT": 252525,
+        "REPUBLICAN": 180543,
+        "LIBERTARIAN": 14746,
+        "OTHER": 16330
+      },
+      "total": 464144,
+      "winner": "DEMOCRAT"
+    },
+    "SC": {
+      "votes": {
+        "REPUBLICAN": 1155389,
+        "DEMOCRAT": 855373,
+        "LIBERTARIAN": 49204,
+        "OTHER": 43061
+      },
+      "total": 2103027,
+      "winner": "REPUBLICAN"
+    },
+    "SD": {
+      "votes": {
+        "REPUBLICAN": 227721,
+        "DEMOCRAT": 117458,
+        "LIBERTARIAN": 20850,
+        "OTHER": 4064
+      },
+      "total": 370093,
+      "winner": "REPUBLICAN"
+    },
+    "TN": {
+      "votes": {
+        "REPUBLICAN": 1522925,
+        "DEMOCRAT": 870695,
+        "OTHER": 114407
+      },
+      "total": 2508027,
+      "winner": "REPUBLICAN"
+    },
+    "TX": {
+      "votes": {
+        "REPUBLICAN": 4685047,
+        "DEMOCRAT": 3877868,
+        "LIBERTARIAN": 283492,
+        "OTHER": 122819
+      },
+      "total": 8969226,
+      "winner": "REPUBLICAN"
+    },
+    "UT": {
+      "votes": {
+        "REPUBLICAN": 515211,
+        "DEMOCRAT": 310674,
+        "OTHER": 265824,
+        "LIBERTARIAN": 39608
+      },
+      "total": 1131317,
+      "winner": "REPUBLICAN"
+    },
+    "VT": {
+      "votes": {
+        "DEMOCRAT": 178573,
+        "REPUBLICAN": 95369,
+        "OTHER": 36447,
+        "LIBERTARIAN": 10078
+      },
+      "total": 320467,
+      "winner": "DEMOCRAT"
+    },
+    "VA": {
+      "votes": {
+        "DEMOCRAT": 1981473,
+        "REPUBLICAN": 1769443,
+        "LIBERTARIAN": 118274,
+        "OTHER": 113562
+      },
+      "total": 3982752,
+      "winner": "DEMOCRAT"
+    },
+    "WA": {
+      "votes": {
+        "DEMOCRAT": 1742718,
+        "REPUBLICAN": 1221747,
+        "LIBERTARIAN": 160879,
+        "OTHER": 191675
+      },
+      "total": 3317019,
+      "winner": "DEMOCRAT"
+    },
+    "WV": {
+      "votes": {
+        "REPUBLICAN": 489371,
+        "DEMOCRAT": 188794,
+        "LIBERTARIAN": 23004,
+        "OTHER": 11882
+      },
+      "total": 713051,
+      "winner": "REPUBLICAN"
+    },
+    "WI": {
+      "votes": {
+        "REPUBLICAN": 1405284,
+        "DEMOCRAT": 1382536,
+        "LIBERTARIAN": 106674,
+        "OTHER": 81656
+      },
+      "total": 2976150,
+      "winner": "REPUBLICAN"
+    },
+    "WY": {
+      "votes": {
+        "REPUBLICAN": 174419,
+        "DEMOCRAT": 55973,
+        "LIBERTARIAN": 13287,
+        "OTHER": 15109
+      },
+      "total": 258788,
+      "winner": "REPUBLICAN"
+    }
+  },
+  "2020": {
+    "AL": {
+      "votes": {
+        "DEMOCRAT": 849624,
+        "REPUBLICAN": 1441170,
+        "LIBERTARIAN": 25176,
+        "OTHER": 7312
+      },
+      "total": 2323282,
+      "winner": "REPUBLICAN"
+    },
+    "AK": {
+      "votes": {
+        "DEMOCRAT": 153778,
+        "REPUBLICAN": 189951,
+        "LIBERTARIAN": 8897,
+        "OTHER": 6904
+      },
+      "total": 359530,
+      "winner": "REPUBLICAN"
+    },
+    "AZ": {
+      "votes": {
+        "DEMOCRAT": 1672143,
+        "REPUBLICAN": 1661686,
+        "LIBERTARIAN": 51465,
+        "OTHER": 2032
+      },
+      "total": 3387326,
+      "winner": "DEMOCRAT"
+    },
+    "AR": {
+      "votes": {
+        "OTHER": 21357,
+        "DEMOCRAT": 423932,
+        "LIBERTARIAN": 13133,
+        "REPUBLICAN": 760647
+      },
+      "total": 1219069,
+      "winner": "REPUBLICAN"
+    },
+    "CA": {
+      "votes": {
+        "DEMOCRAT": 11110250,
+        "REPUBLICAN": 6006429,
+        "LIBERTARIAN": 187895,
+        "OTHER": 196307
+      },
+      "total": 17500881,
+      "winner": "DEMOCRAT"
+    },
+    "CO": {
+      "votes": {
+        "DEMOCRAT": 1804352,
+        "REPUBLICAN": 1364607,
+        "LIBERTARIAN": 52460,
+        "OTHER": 58561
+      },
+      "total": 3279980,
+      "winner": "DEMOCRAT"
+    },
+    "CT": {
+      "votes": {
+        "DEMOCRAT": 1080831,
+        "REPUBLICAN": 714717,
+        "LIBERTARIAN": 20230,
+        "OTHER": 8079
+      },
+      "total": 1823857,
+      "winner": "DEMOCRAT"
+    },
+    "DE": {
+      "votes": {
+        "OTHER": 2475,
+        "DEMOCRAT": 296268,
+        "REPUBLICAN": 200603,
+        "LIBERTARIAN": 5000
+      },
+      "total": 504346,
+      "winner": "DEMOCRAT"
+    },
+    "DC": {
+      "votes": {
+        "DEMOCRAT": 317323,
+        "REPUBLICAN": 18586,
+        "LIBERTARIAN": 2036,
+        "OTHER": 6411
+      },
+      "total": 344356,
+      "winner": "DEMOCRAT"
+    },
+    "FL": {
+      "votes": {
+        "DEMOCRAT": 5297045,
+        "REPUBLICAN": 5668731,
+        "LIBERTARIAN": 70324,
+        "OTHER": 31356
+      },
+      "total": 11067456,
+      "winner": "REPUBLICAN"
+    },
+    "GA": {
+      "votes": {
+        "OTHER": 2244,
+        "DEMOCRAT": 2473633,
+        "REPUBLICAN": 2461854,
+        "LIBERTARIAN": 62229
+      },
+      "total": 4999960,
+      "winner": "DEMOCRAT"
+    },
+    "HI": {
+      "votes": {
+        "DEMOCRAT": 366130,
+        "REPUBLICAN": 196864,
+        "LIBERTARIAN": 5539,
+        "OTHER": 11251
+      },
+      "total": 579784,
+      "winner": "DEMOCRAT"
+    },
+    "ID": {
+      "votes": {
+        "DEMOCRAT": 287021,
+        "REPUBLICAN": 554119,
+        "LIBERTARIAN": 16404,
+        "OTHER": 10470
+      },
+      "total": 868014,
+      "winner": "REPUBLICAN"
+    },
+    "IL": {
+      "votes": {
+        "DEMOCRAT": 3471915,
+        "REPUBLICAN": 2446891,
+        "LIBERTARIAN": 66544,
+        "OTHER": 48393
+      },
+      "total": 6033743,
+      "winner": "DEMOCRAT"
+    },
+    "IN": {
+      "votes": {
+        "DEMOCRAT": 1242416,
+        "REPUBLICAN": 1729519,
+        "LIBERTARIAN": 59232,
+        "OTHER": 1951
+      },
+      "total": 3033118,
+      "winner": "REPUBLICAN"
+    },
+    "IA": {
+      "votes": {
+        "REPUBLICAN": 897672,
+        "DEMOCRAT": 759061,
+        "OTHER": 23760,
+        "LIBERTARIAN": 19637
+      },
+      "total": 1700130,
+      "winner": "REPUBLICAN"
+    },
+    "KS": {
+      "votes": {
+        "REPUBLICAN": 771406,
+        "DEMOCRAT": 570323,
+        "LIBERTARIAN": 30574
+      },
+      "total": 1372303,
+      "winner": "REPUBLICAN"
+    },
+    "KY": {
+      "votes": {
+        "REPUBLICAN": 1326646,
+        "DEMOCRAT": 772474,
+        "LIBERTARIAN": 26234,
+        "OTHER": 11414
+      },
+      "total": 2136768,
+      "winner": "REPUBLICAN"
+    },
+    "LA": {
+      "votes": {
+        "DEMOCRAT": 856034,
+        "LIBERTARIAN": 21645,
+        "REPUBLICAN": 1255776,
+        "OTHER": 14607
+      },
+      "total": 2148062,
+      "winner": "REPUBLICAN"
+    },
+    "ME": {
+      "votes": {
+        "DEMOCRAT": 435072,
+        "LIBERTARIAN": 14152,
+        "REPUBLICAN": 360737,
+        "OTHER": 18344
+      },
+      "total": 828305,
+      "winner": "DEMOCRAT"
+    },
+    "MD": {
+      "votes": {
+        "REPUBLICAN": 976414,
+        "DEMOCRAT": 1985023,
+        "LIBERTARIAN": 33488,
+        "OTHER": 42105
+      },
+      "total": 3037030,
+      "winner": "DEMOCRAT"
+    },
+    "MA": {
+      "votes": {
+        "DEMOCRAT": 2382202,
+        "REPUBLICAN": 1167202,
+        "LIBERTARIAN": 47013,
+        "OTHER": 61588
+      },
+      "total": 3658005,
+      "winner": "DEMOCRAT"
+    },
+    "MI": {
+      "votes": {
+        "DEMOCRAT": 2804040,
+        "REPUBLICAN": 2649852,
+        "LIBERTARIAN": 60381,
+        "OTHER": 25029
+      },
+      "total": 5539302,
+      "winner": "DEMOCRAT"
+    },
+    "MN": {
+      "votes": {
+        "REPUBLICAN": 1484065,
+        "DEMOCRAT": 1717077,
+        "OTHER": 41053,
+        "LIBERTARIAN": 34976
+      },
+      "total": 3277171,
+      "winner": "DEMOCRAT"
+    },
+    "MS": {
+      "votes": {
+        "DEMOCRAT": 539398,
+        "REPUBLICAN": 756764,
+        "OTHER": 9571,
+        "LIBERTARIAN": 8026
+      },
+      "total": 1313759,
+      "winner": "REPUBLICAN"
+    },
+    "MO": {
+      "votes": {
+        "REPUBLICAN": 1718736,
+        "DEMOCRAT": 1253014,
+        "LIBERTARIAN": 41205,
+        "OTHER": 13007
+      },
+      "total": 3025962,
+      "winner": "REPUBLICAN"
+    },
+    "MT": {
+      "votes": {
+        "LIBERTARIAN": 15252,
+        "REPUBLICAN": 343602,
+        "DEMOCRAT": 244786,
+        "OTHER": 34
+      },
+      "total": 603674,
+      "winner": "REPUBLICAN"
+    },
+    "NE": {
+      "votes": {
+        "REPUBLICAN": 556846,
+        "DEMOCRAT": 374583,
+        "LIBERTARIAN": 20283,
+        "OTHER": 4671
+      },
+      "total": 956383,
+      "winner": "REPUBLICAN"
+    },
+    "NV": {
+      "votes": {
+        "LIBERTARIAN": 14783,
+        "REPUBLICAN": 669890,
+        "DEMOCRAT": 703486,
+        "OTHER": 17217
+      },
+      "total": 1405376,
+      "winner": "DEMOCRAT"
+    },
+    "NH": {
+      "votes": {
+        "LIBERTARIAN": 13235,
+        "REPUBLICAN": 365654,
+        "DEMOCRAT": 424921,
+        "OTHER": 2372
+      },
+      "total": 806182,
+      "winner": "DEMOCRAT"
+    },
+    "NJ": {
+      "votes": {
+        "REPUBLICAN": 1883274,
+        "DEMOCRAT": 2608335,
+        "LIBERTARIAN": 31677,
+        "OTHER": 26067
+      },
+      "total": 4549353,
+      "winner": "DEMOCRAT"
+    },
+    "NM": {
+      "votes": {
+        "OTHER": 7872,
+        "LIBERTARIAN": 12585,
+        "DEMOCRAT": 501614,
+        "REPUBLICAN": 401894
+      },
+      "total": 923965,
+      "winner": "DEMOCRAT"
+    },
+    "NY": {
+      "votes": {
+        "DEMOCRAT": 5230985,
+        "REPUBLICAN": 3244798,
+        "OTHER": 125718,
+        "LIBERTARIAN": 60234
+      },
+      "total": 8661735,
+      "winner": "DEMOCRAT"
+    },
+    "NC": {
+      "votes": {
+        "REPUBLICAN": 2758773,
+        "DEMOCRAT": 2684292,
+        "LIBERTARIAN": 48678,
+        "OTHER": 33059
+      },
+      "total": 5524802,
+      "winner": "REPUBLICAN"
+    },
+    "ND": {
+      "votes": {
+        "REPUBLICAN": 235595,
+        "DEMOCRAT": 114902,
+        "LIBERTARIAN": 9393,
+        "OTHER": 1929
+      },
+      "total": 361819,
+      "winner": "REPUBLICAN"
+    },
+    "OH": {
+      "votes": {
+        "REPUBLICAN": 3154834,
+        "DEMOCRAT": 2679165,
+        "LIBERTARIAN": 67569,
+        "OTHER": 20634
+      },
+      "total": 5922202,
+      "winner": "REPUBLICAN"
+    },
+    "OK": {
+      "votes": {
+        "REPUBLICAN": 1020280,
+        "DEMOCRAT": 503890,
+        "LIBERTARIAN": 24731,
+        "OTHER": 11798
+      },
+      "total": 1560699,
+      "winner": "REPUBLICAN"
+    },
+    "OR": {
+      "votes": {
+        "REPUBLICAN": 958448,
+        "DEMOCRAT": 1340383,
+        "LIBERTARIAN": 41582,
+        "OTHER": 33908
+      },
+      "total": 2374321,
+      "winner": "DEMOCRAT"
+    },
+    "PA": {
+      "votes": {
+        "REPUBLICAN": 3377674,
+        "DEMOCRAT": 3458229,
+        "LIBERTARIAN": 79380
+      },
+      "total": 6915283,
+      "winner": "DEMOCRAT"
+    },
+    "RI": {
+      "votes": {
+        "DEMOCRAT": 307486,
+        "REPUBLICAN": 199922,
+        "LIBERTARIAN": 5053,
+        "OTHER": 4529
+      },
+      "total": 516990,
+      "winner": "DEMOCRAT"
+    },
+    "SC": {
+      "votes": {
+        "OTHER": 9536,
+        "REPUBLICAN": 1385103,
+        "LIBERTARIAN": 27916,
+        "DEMOCRAT": 1091541
+      },
+      "total": 2514096,
+      "winner": "REPUBLICAN"
+    },
+    "SD": {
+      "votes": {
+        "REPUBLICAN": 261043,
+        "DEMOCRAT": 150471,
+        "LIBERTARIAN": 11095
+      },
+      "total": 422609,
+      "winner": "REPUBLICAN"
+    },
+    "TN": {
+      "votes": {
+        "REPUBLICAN": 1852475,
+        "DEMOCRAT": 1143711,
+        "OTHER": 57665
+      },
+      "total": 3053851,
+      "winner": "REPUBLICAN"
+    },
+    "TX": {
+      "votes": {
+        "REPUBLICAN": 5890347,
+        "DEMOCRAT": 5259126,
+        "LIBERTARIAN": 126243,
+        "OTHER": 39340
+      },
+      "total": 11315056,
+      "winner": "REPUBLICAN"
+    },
+    "UT": {
+      "votes": {
+        "OTHER": 24420,
+        "DEMOCRAT": 560282,
+        "LIBERTARIAN": 38447,
+        "REPUBLICAN": 865140
+      },
+      "total": 1488289,
+      "winner": "REPUBLICAN"
+    },
+    "VT": {
+      "votes": {
+        "DEMOCRAT": 242820,
+        "REPUBLICAN": 112704,
+        "LIBERTARIAN": 3608,
+        "OTHER": 11836
+      },
+      "total": 370968,
+      "winner": "DEMOCRAT"
+    },
+    "VA": {
+      "votes": {
+        "DEMOCRAT": 2413568,
+        "REPUBLICAN": 1962430,
+        "LIBERTARIAN": 64761,
+        "OTHER": 19765
+      },
+      "total": 4460524,
+      "winner": "DEMOCRAT"
+    },
+    "WA": {
+      "votes": {
+        "DEMOCRAT": 2369612,
+        "REPUBLICAN": 1584651,
+        "LIBERTARIAN": 80500,
+        "OTHER": 52868
+      },
+      "total": 4087631,
+      "winner": "DEMOCRAT"
+    },
+    "WV": {
+      "votes": {
+        "DEMOCRAT": 235984,
+        "REPUBLICAN": 545382,
+        "LIBERTARIAN": 10687,
+        "OTHER": 2599
+      },
+      "total": 794652,
+      "winner": "REPUBLICAN"
+    },
+    "WI": {
+      "votes": {
+        "DEMOCRAT": 1630866,
+        "REPUBLICAN": 1610184,
+        "OTHER": 56991
+      },
+      "total": 3298041,
+      "winner": "DEMOCRAT"
+    },
+    "WY": {
+      "votes": {
+        "DEMOCRAT": 73491,
+        "REPUBLICAN": 193559,
+        "LIBERTARIAN": 5768,
+        "OTHER": 5685
+      },
+      "total": 278503,
+      "winner": "REPUBLICAN"
+    }
+  }
+}

@@ -2,21 +2,22 @@
 import React from "react";
 export default function About() {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-4 py-16 text-white">
-      <h2 className="text-3xl font-bold mb-6">About Me</h2>
-
-      <p className="text-lg leading-relaxed mb-12">
+    <section id="about" className="w-full mx-auto mt-12  flex flex-col gap-6">
+      <h2 className="text-3xl font-bold ">About Me</h2>
+      <p className="leading-relaxed">
         I believe in the power of data-driven and user-centric design. By
         analyzing user feedback and behavior, designers can create solutions
         that are both visually compelling and functionally efficient—directly
         addressing real user challenges.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Education */}
-        <div>
-          <h3 className="text-2xl font-semibold mb-4">Education</h3>
-          <div className="mb-6">
+
+        <div className="flex flex-col gap-6">
+          <h3 className="text-lg font-semibold">Education</h3>
+
+          <div className="flex flex-col gap-1">
             <h4 className="font-semibold">MSc Human-Computer Interaction</h4>
             <p className="text-sm text-gray-300">
               2020–2022 | Eindhoven University of Technology
@@ -26,7 +27,8 @@ export default function About() {
               data visualization, ML & design, principles of robot interaction.
             </p>
           </div>
-          <div>
+
+          <div className="flex flex-col gap-1">
             <h4 className="font-semibold">BEng Industrial Design</h4>
             <p className="text-sm text-gray-300">
               2014–2018 | South China University of Technology
@@ -39,9 +41,10 @@ export default function About() {
         </div>
 
         {/* Work Experience */}
-        <div>
-          <h3 className="text-2xl font-semibold mb-4">Work Experience</h3>
-          <div className="mb-6">
+        <div className="flex flex-col gap-6">
+          <h3 className="text-lg font-semibold">Work Experience</h3>
+
+          <div className="flex flex-col gap-1">
             <h4 className="font-semibold">UX Designer & Researcher</h4>
             <p className="text-sm text-gray-300">2022.09 – Present | Deerns</p>
             <p>
@@ -50,7 +53,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="mb-6">
+          <div className="flex flex-col gap-1">
             <h4 className="font-semibold">UX Design Intern</h4>
             <p className="text-sm text-gray-300">
               2021.09–2022.03 | Accenture (VanBerlo)
@@ -62,7 +65,7 @@ export default function About() {
             </p>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-1">
             <h4 className="font-semibold">UX Designer</h4>
             <p className="text-sm text-gray-300">2018.07–2019.09 | Konka</p>
             <p>
@@ -74,10 +77,10 @@ export default function About() {
         </div>
 
         {/* Part-time Projects */}
-        <div>
-          <h3 className="text-2xl font-semibold mb-4">Part-time Projects</h3>
+        <div className="flex flex-col gap-6">
+          <h3 className="text-lg font-semibold">Part-time Projects</h3>
 
-          <div>
+          <div className="flex flex-col gap-1">
             <h4 className="font-semibold">
               Installation Artist & Graphic Designer
             </h4>
@@ -94,8 +97,8 @@ export default function About() {
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold">New Media / Concept Artist</h4>
+          <div className="flex flex-col gap-1">
+            <h4 className="font-semibold">New Media Concept Artist</h4>
             <p className="text-sm text-gray-300">
               2020.03 – 2020.08 | Pixel Forest
             </p>
