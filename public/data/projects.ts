@@ -20,20 +20,29 @@ export const projects = [
       "Immersed in virtual reality despite motion sickness, I collaborated with a healthcare research group in 2016. This led to my master's thesis exploring emotions in virtual environments. My study addresses a gap by introducing the Rasch Model, which offers a more objective comparison method for immersive experiences, shifting from solely subjective assessments to analyzing user behavior across studies on a standardized scale.",
     details: {
       Role: "Researcher",
-      Date: "March 2020",
+      Date: "March 2022",
       Scope: ["Research", "Virtual Reality", "Rasch Model"],
     },
   },
   {
     slug: "vote",
     title: "Voice of People",
-    short_description: "A web app that does XYZ.",
-    details: "Full details about Project One...",
+    short_description: "Data visualization for US president history elections.",
+    details: {
+      Role: "Data Analyst, Software Developer",
+      Date: "September 2021",
+      Scope: ["Data Visualization"],
+    },
   },
   {
     slug: "yiui",
     title: "YIUI Smart TV System",
-    short_description: "A web app that does XYZ.",
-    details: "Full details about Project One...",
+    short_description:
+      "A major system upgrade includes settings and navigation design.",
+    details: {
+      Role: "UX Designer, UX Researcher",
+      Date: "August 2019",
+      Scope: ["UX Design"],
+    },
   },
 ];
