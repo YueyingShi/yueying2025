@@ -111,9 +111,10 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
       >
         {/* control panel */}
         <div className="flex flex-col gap-8 p-6">
-          <div>
-            <h2 className="text-xl font-semibold">People's Votes</h2>
-            <p>U.S. Presidential Election Results</p>
+          <div className="flex flex-col gap-1">
+            <h2 className="text-xl font-semibold">Voice of People</h2>
+            <p className="text-gray-400 text-sm">2004 - 2020</p>
+            <p className="text-gray-400 text-sm">U.S. Presidential Elections</p>
           </div>
           {/* range selector */}
           <div className="w-full">

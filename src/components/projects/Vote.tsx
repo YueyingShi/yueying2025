@@ -2,6 +2,9 @@ import ElectionPage from "@/app/apps/us-election/page";
 export default function Vote() {
   return (
     <>
+      <div className="w-[100vw] px-8 max-w-7xl">
+        <ElectionPage embed={true} />
+      </div>
       <section className="paragraph">
         <h2>Goal: A Better Visualization For Voting Results</h2>
         <p>
@@ -31,12 +34,10 @@ export default function Vote() {
           </li>
           <li>Conducting any user-defined comparative analysis</li>
         </ul>
-        <h2>Outcome</h2>
       </section>
-      <div className="w-[100vw] px-8 max-w-7xl">
-        <ElectionPage embed={true} />
-      </div>
-      <section>
+
+      <section className="paragraph">
+        <h2>Outcome</h2>
         <h3>Multiple Map Types: Choropleth Map vs. Bubble Map</h3>
         <p>We provide two map types to visualize voting results:</p>
         <ul className="list-disc list-inside space-y-1">
