@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import stateNameToCode from "@/data/stateNameToCode";
@@ -47,7 +47,13 @@ export default function ChoroplethMap({
   const [selectedStateCode, setSelectedStateCode] = useState<string | null>(
     null
   );
-  const geoJsonRef = useRef<any>(null);
+  const [geoJsonLayer, setGeoJsonLayer] = useState<any>(null);
+
+  const handleGeoJsonRef = useCallback((layer: any) => {
+    if (layer) {
+      setGeoJsonLayer(layer);
+    }
+  }, []);
 
   // Fetch geojson for US states once
   useEffect(() => {
@@ -60,14 +66,29 @@ export default function ChoroplethMap({
 
   // Update style of GeoJSON layers when selection changes
   useEffect(() => {
-    if (!geoJsonData || !geoJsonRef.current) return;
+    if (!geoJsonLayer || !geoJsonData) return;
 
-    geoJsonRef.current.eachLayer((layer: any) => {
+    geoJsonLayer.eachLayer((layer: any) => {
       const feature = layer.feature;
       const stateName = feature.properties.name;
       const stateCode = stateNameToCode[stateName];
 
-      layer.off(); // Remove old listeners
+      const stateData = data?.[year]?.[stateCode];
+      const winnerColor = stateData
+        ? partyColors[stateData.winner]
+        : partyColors.UNKNOWN;
+
+      const isSelected = selectedStateCode === stateCode;
+
+      // Reset base style depending on selection
+      layer.setStyle({
+        fillColor: winnerColor,
+        weight: 1,
+        color: "#fff",
+        fillOpacity: isSelected ? 0.8 : 0.4,
+      });
+
+      layer.off(); // Remove previous handlers
 
       layer.on({
         click: () => {
@@ -80,18 +101,18 @@ export default function ChoroplethMap({
         },
         mouseover: (e: any) => {
           e.target.setStyle({
-            fillOpacity: 0.9,
+            fillOpacity: 1,
           });
         },
         mouseout: (e: any) => {
-          const isSelected = selectedStateCode === stateCode;
+          const isStillSelected = selectedStateCode === stateCode;
           e.target.setStyle({
-            fillOpacity: isSelected ? 1 : 0.6,
+            fillOpacity: isStillSelected ? 0.8 : 0.4,
           });
         },
       });
     });
-  }, [selectedStateCode, geoJsonData, data, year]);
+  }, [geoJsonLayer, geoJsonData, year, data, selectedStateCode]);
 
   // Initial style applied to each feature on load
   function stateStyle(feature: any) {
@@ -106,7 +127,7 @@ export default function ChoroplethMap({
       fillColor: winnerColor,
       weight: 1,
       color: "#fff",
-      fillOpacity: 0.6,
+      fillOpacity: 0.4,
     };
   }
 
@@ -125,7 +146,12 @@ export default function ChoroplethMap({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <GeoJSON ref={geoJsonRef} data={geoJsonData} style={stateStyle} />
+      <GeoJSON
+        key={year}
+        ref={handleGeoJsonRef}
+        data={geoJsonData}
+        style={stateStyle}
+      />
     </MapContainer>
   );
 }

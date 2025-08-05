@@ -6,18 +6,17 @@ import { usePathname, useRouter } from "next/navigation";
 type NavItemProps = {
   label: string;
   href: string;
-  scroll?: boolean;
-  isHome?: boolean;
+  isScrolled: boolean;
 };
 
-export default function NavItem({ label, href }: NavItemProps) {
+export default function NavItem({ label, href, isScrolled }: NavItemProps) {
   const pathname = usePathname();
   const router = useRouter();
 
   const baseClass = `${
-    pathname === "/"
+    isScrolled
       ? "text-gray-50 hover:border-white/40"
-      : "text-gray-400 hover:border-gray-300"
+      : "text-gray-400 hover:border-gray-200"
   } cursor-pointer border-b-2 border-transparent   transition duration-300 ease-in-out`;
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {

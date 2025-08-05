@@ -21,35 +21,36 @@ export default function Vote() {
         <p>
           Our goal is to empower users with a tool that helps uncover deeper
           insights by enabling them to explore underlying patterns, such as:
-          <ul className="list-disc list-inside space-y-1">
-            <li>Comparing different election years</li>
-            <li>Analyzing neighboring states side by side</li>
-            <li>
-              Comparing states with similar characteristics (e.g., coastal vs.
-              inland regions)
-            </li>
-            <li>Conducting any user-defined comparative analysis</li>
-          </ul>
         </p>
-
+        <ul className="list-disc list-inside space-y-1">
+          <li>Comparing different election years</li>
+          <li>Analyzing neighboring states side by side</li>
+          <li>
+            Comparing states with similar characteristics (e.g., coastal vs.
+            inland regions)
+          </li>
+          <li>Conducting any user-defined comparative analysis</li>
+        </ul>
         <h2>Outcome</h2>
+      </section>
+      <div className="w-[100vw] px-8 max-w-7xl">
         <ElectionPage embed={true} />
+      </div>
+      <section>
         <h3>Multiple Map Types: Choropleth Map vs. Bubble Map</h3>
-        <p>
-          We provide two map types to visualize voting results:
-          <ul className="list-disc list-inside space-y-1">
-            <li>
-              <strong>Choropleth Map</strong>: Uses color gradients to represent
-              the winning party in each state.
-            </li>
-            <li>
-              <strong>Bubble Map</strong>: Uses bubble sizes to represent total
-              votes per state, with colors indicating the winning party. This
-              allows for a more intuitive understanding of voting volume at a
-              glance.
-            </li>
-          </ul>
-        </p>
+        <p>We provide two map types to visualize voting results:</p>
+        <ul className="list-disc list-inside space-y-1">
+          <li>
+            <strong>Choropleth Map</strong>: Uses color gradients to represent
+            the winning party in each state.
+          </li>
+          <li>
+            <strong>Bubble Map</strong>: Uses bubble sizes to represent total
+            votes per state, with colors indicating the winning party. This
+            allows for a more intuitive understanding of voting volume at a
+            glance.
+          </li>
+        </ul>
 
         <h3>Historical Voting Results Comparison</h3>
         <p>

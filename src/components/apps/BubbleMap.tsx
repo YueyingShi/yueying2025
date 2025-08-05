@@ -174,6 +174,7 @@ export default function BubbleMap({
         attribution="&copy; OpenStreetMap contributors"
       />
       <GeoJSON
+        key={year}
         data={geoJsonData}
         style={stateStyle}
         onEachFeature={onEachState}

@@ -15,14 +15,18 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed w-full top-0 left-0 z-20 transition-colors duration-300 ${
+      className={`fixed w-full top-0 left-0 z-600 transition-colors duration-300 ${
         isScrolled ? "bg-black/50 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <nav className="flex max-w-7xl mx-auto p-4 text-white justify-between gap-4">
-        <NavItem label="HOME" href="/#banner" isHome />
-        <NavItem label="PROJECTS" href="/#projects" isHome />
-        <NavItem label="ABOUT " href="/#about" isHome />
+      <nav
+        className={`flex max-w-7xl mx-auto p-4  justify-between gap-4 ${
+          isScrolled ? "text-white" : "text-gray-400"
+        }`}
+      >
+        <NavItem label="HOME" href="/#banner" isScrolled={isScrolled} />
+        <NavItem label="PROJECTS" href="/#projects" isScrolled={isScrolled} />
+        <NavItem label="ABOUT " href="/#about" isScrolled={isScrolled} />
       </nav>
     </div>
   );

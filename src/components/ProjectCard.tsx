@@ -13,7 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
       <div className="flex gap-2 mt-4">
         {Array.isArray((project.details as any).Scope) &&
           ((project.details as any).Scope as string[]).map((scope) => (
-            <Badge text={scope} />
+            <Badge key={scope} text={scope} />
           ))}{" "}
       </div>
     </div>
