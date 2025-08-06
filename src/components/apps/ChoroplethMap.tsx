@@ -1,3 +1,4 @@
+// ChoroplethMap.tsx
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
@@ -23,7 +24,35 @@ const partyColors: Record<string, string> = {
   OTHER: "#888888",
   UNKNOWN: "#ddd",
 };
+function interpolateColor(percentage: number): string {
+  const p = Math.max(0, Math.min(1, percentage));
 
+  // Easing to intensify blue/red at ~70%
+  const eased =
+    p < 0.5
+      ? 0.5 * Math.pow(p * 2, 2) // blue → white
+      : 1 - 0.5 * Math.pow((1 - p) * 2, 2); // white → red
+
+  const blue = [76, 111, 255]; // #4c6fff
+  const white = [255, 255, 255]; // #ffffff
+  const red = [255, 77, 77]; // #ff4d4d
+
+  let r, g, b;
+
+  if (eased < 0.5) {
+    const ratio = eased / 0.5;
+    r = Math.round(blue[0] + (white[0] - blue[0]) * ratio);
+    g = Math.round(blue[1] + (white[1] - blue[1]) * ratio);
+    b = Math.round(blue[2] + (white[2] - blue[2]) * ratio);
+  } else {
+    const ratio = (eased - 0.5) / 0.5;
+    r = Math.round(white[0] + (red[0] - white[0]) * ratio);
+    g = Math.round(white[1] + (red[1] - white[1]) * ratio);
+    b = Math.round(white[2] + (red[2] - white[2]) * ratio);
+  }
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
 export default function ChoroplethMap({
   year,
   onSelectStateData,
@@ -63,7 +92,32 @@ export default function ChoroplethMap({
       .then((res) => res.json())
       .then(setGeoJsonData);
   }, []);
+  // Initial style applied to each feature on load
+  function stateStyle(feature: any) {
+    const stateName = feature.properties.name;
+    const stateCode = stateNameToCode[stateName];
+    const stateData = data?.[year]?.[stateCode];
 
+    let fillColor = "#ccc"; // Default gray for no data
+
+    if (stateData) {
+      const repVotes = stateData.votes.REPUBLICAN || 0;
+      const demVotes = stateData.votes.DEMOCRAT || 0;
+      const total = repVotes + demVotes;
+
+      if (total > 0) {
+        const demRatio = demVotes / total; // 1 = all blue, 0 = all red
+        fillColor = interpolateColor(1 - demRatio);
+      }
+    }
+
+    return {
+      fillColor,
+      color: "#fff", // border
+      weight: 1,
+      fillOpacity: 0.8,
+    };
+  }
   // Update style of GeoJSON layers when selection changes
   useEffect(() => {
     if (!geoJsonLayer || !geoJsonData) return;
@@ -74,15 +128,24 @@ export default function ChoroplethMap({
       const stateCode = stateNameToCode[stateName];
 
       const stateData = data?.[year]?.[stateCode];
-      const winnerColor = stateData
-        ? partyColors[stateData.winner]
-        : partyColors.UNKNOWN;
+      let fillColor = "#ccc"; // Default gray for no data
+
+      if (stateData) {
+        const repVotes = stateData.votes.REPUBLICAN || 0;
+        const demVotes = stateData.votes.DEMOCRAT || 0;
+        const total = repVotes + demVotes;
+
+        if (total > 0) {
+          const demRatio = demVotes / total; // 1 = all blue, 0 = all red
+          fillColor = interpolateColor(1 - demRatio);
+        }
+      }
 
       const isSelected = selectedStateCode === stateCode;
 
       // Reset base style depending on selection
       layer.setStyle({
-        fillColor: winnerColor,
+        fillColor,
         weight: 1,
         color: "#fff",
         fillOpacity: isSelected ? 0.8 : 0.4,
@@ -113,23 +176,6 @@ export default function ChoroplethMap({
       });
     });
   }, [geoJsonLayer, geoJsonData, year, data, selectedStateCode]);
-
-  // Initial style applied to each feature on load
-  function stateStyle(feature: any) {
-    const stateName = feature.properties.name;
-    const stateCode = stateNameToCode[stateName];
-    const stateData = data?.[year]?.[stateCode];
-    const winnerColor = stateData
-      ? partyColors[stateData.winner]
-      : partyColors.UNKNOWN;
-
-    return {
-      fillColor: winnerColor,
-      weight: 1,
-      color: "#fff",
-      fillOpacity: 0.4,
-    };
-  }
 
   if (!geoJsonData) return <p>Loading map...</p>;
 

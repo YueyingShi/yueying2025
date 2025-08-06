@@ -15,7 +15,6 @@ import {
   Bar,
   XAxis,
   YAxis,
-  Cell,
   Tooltip as ChartTooltip,
   Legend,
   ResponsiveContainer,
@@ -105,12 +104,12 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
   return (
     <>
       <main
-        className={`relative mx-auto grid grid-cols-1 w-full md:grid-cols-4 ${
-          embed ? "pl-2  " : "mt-16 pl-16 "
+        className={`relative mx-auto  grid grid-cols-1 w-full md:grid-cols-4 max-w-7xl ${
+          embed ? "" : "  mt-16 "
         }  bg-gray-50 font-sans border border-gray-300 rounded `}
       >
         {/* control panel */}
-        <div className="flex flex-col gap-8 p-6">
+        <div className="flex flex-col gap-8 px-8 py-8">
           <div className="flex flex-col gap-1">
             <h2 className="text-xl font-semibold">Voice of People</h2>
             <p className="text-gray-400 text-sm">2004 - 2020</p>
@@ -180,7 +179,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
         </div>
 
         {/* map */}
-        <div className="col-span-3 h-[60vh]">
+        <div className={`col-span-3 ${embed ? "h-[60vh]" : "h-[80vh]"} `}>
           {mapChart === "BubbleMap" && (
             <BubbleMap
               year={year}
@@ -199,16 +198,24 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
           )}
         </div>
 
+        {/* color indicator */}
+        {mapChart === "ChoroplethMap" && (
+          <div className={`absolute top-6 right-6 w-1/3 rounded-xl  z-500`}>
+            <div className="h-3 w-full bg-gradient-to-r from-[#4c6fff] via-white to-[#ff4d4d] rounded-full" />
+            <div className="flex justify-between text-xs text-gray-600 mt-1">
+              <span className="text-blue-600 font-medium">Democrat</span>
+              <span className="text-gray-600 font-medium">Close Race</span>
+              <span className="text-red-500 font-medium">Republican</span>
+            </div>
+          </div>
+        )}
+
         {/* description */}
         <div
-          className={`absolute ${
-            embed
-              ? "bottom-2 right-2 p-3 text-xs w-1/3 rounded"
-              : "bottom-6 right-6 p-6 w-1/4 rounded-xl "
-          } bg-white/75  z-500`}
+          className={`absolute bottom-6 right-6 p-4 w-1/3 rounded-xl  bg-white/75  z-500`}
         >
           {!selected && (
-            <div className="mt-4 p-4 bg-yellow-100 rounded max-w-md mx-auto">
+            <div className="text-gray-600 text-sm">
               <p>Please select a state to see details.</p>
             </div>
           )}
@@ -222,16 +229,12 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
 
               <ResponsiveContainer
                 width="100%"
-                height={embed ? 200 : 320}
+                height={240}
                 className="text-xs"
               >
                 <BarChart
                   data={chartData}
-                  margin={
-                    embed
-                      ? { top: 0, right: 0, left: 0, bottom: 0 }
-                      : { top: 20, right: 30, left: 20, bottom: 20 }
-                  }
+                  margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
                   stackOffset="expand"
                 >
                   <XAxis dataKey="year" />
@@ -262,7 +265,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
           )}
 
           {selected && !selected.stateCode && (
-            <div className="mt-4 p-4 bg-red-100 rounded max-w-md mx-auto">
+            <div className="text-red-700 text-sm">
               <p>No data available for {selected.stateName}.</p>
             </div>
           )}
