@@ -29,7 +29,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
 
   const years = ["2004", "2008", "2012", "2016", "2020"];
   const [year, setYear] = useState(years[years.length - 1]);
-  const mapCharts = ["ChoroplethMap", "BubbleMap"];
+  const mapCharts = ["BubbleMap", "ChoroplethMap"];
   const [mapChart, setMapChart] = useState(mapCharts[0]);
 
   const orderedParties = ["REPUBLICAN", "DEMOCRAT", "LIBERTARIAN", "OTHER"];
@@ -152,45 +152,35 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
               ))}
             </div>
           </div>
-          {/* range selector */}
+          {/* map selector */}
           <div className="relative w-full">
             <label className="block mb-2 text-sm font-medium text-gray-400">
               Select Map Type
             </label>
-            <div className="relative">
-              <select
-                value={mapChart}
-                onChange={(e) => setMapChart(e.target.value)}
-                className="w-full appearance-none text-sm px-3 py-2 pr-10 border border-gray-300 rounded-md shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              >
-                {mapCharts.map((chart) => (
-                  <option key={chart} value={chart}>
-                    {chart}
-                  </option>
-                ))}
-              </select>
-              {/* Custom chevron icon */}
-              <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-gray-500">
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
+            <div className="space-y-2">
+              {mapCharts.map((chart) => (
+                <label
+                  key={chart}
+                  className="flex items-center space-x-2 text-sm text-gray-700"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19 9l-7 7-7-7"
+                  <input
+                    type="radio"
+                    name="mapChart"
+                    value={chart}
+                    checked={mapChart === chart}
+                    onChange={(e) => setMapChart(e.target.value)}
+                    className="text-blue-600 focus:ring-blue-500"
                   />
-                </svg>
-              </div>
+                  <span>{chart}</span>
+                </label>
+              ))}
             </div>
           </div>
+          {/*end - map selector */}
         </div>
 
         {/* map */}
-        <div className="col-span-3">
+        <div className="col-span-3 h-[60vh]">
           {mapChart === "BubbleMap" && (
             <BubbleMap
               year={year}

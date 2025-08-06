@@ -2,7 +2,15 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, GeoJSON, Circle } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  GeoJSON,
+  Circle,
+  Marker,
+} from "react-leaflet";
+import L from "leaflet"; // ⬅️ Import Leaflet directly
+
 import "leaflet/dist/leaflet.css";
 import stateNameToCode from "@/data/stateNameToCode";
 type ElectionData = Record<
@@ -74,7 +82,7 @@ export default function BubbleMap({
   }, []);
 
   // max radius for bubbles (in meters)
-  const maxRadius = 300000;
+  const maxRadius = 250000;
   const minRadius = 30000;
 
   // find max votes in the data for scaling
@@ -82,29 +90,40 @@ export default function BubbleMap({
     ...Object.values(data?.[year] || {}).map((s) => s.total || 0)
   );
 
-  // render bubble circles for each state
-  const bubbles = geoJsonData?.features.map((feature: any) => {
+  function formatCompactNumber(num: number): string {
+    if (num >= 1_000_000_000) {
+      return (num / 1_000_000_000).toFixed(1) + "B";
+    } else if (num >= 1_000_000) {
+      return (num / 1_000_000).toFixed(1) + "M";
+    } else if (num >= 1_000) {
+      return (num / 1_000).toFixed(1) + "K";
+    } else {
+      return num.toFixed(1);
+    }
+  }
+
+  // Inside your map over geoJsonData.features
+  const bubbles = geoJsonData?.features.flatMap((feature: any) => {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     const stateData = data?.[year]?.[stateCode];
-    if (!stateData) return null;
+    if (!stateData) return [];
 
     const [lat, lng] = getCentroid(feature.geometry);
-    // Check for NaN
-    if (isNaN(lat) || isNaN(lng)) return null;
-    const radius = (stateData.total / maxVotes) * maxRadius + minRadius;
+    if (isNaN(lat) || isNaN(lng)) return [];
 
+    const radius = (stateData.total / maxVotes) * maxRadius + minRadius;
     const color = partyColors[stateData.winner] || partyColors.UNKNOWN;
 
-    return (
+    const circle = (
       <Circle
-        key={stateCode}
+        key={`circle-${stateCode}`}
         center={[lat, lng]}
         radius={radius}
         pathOptions={{
           fillColor: color,
           color: "transparent",
-          fillOpacity: 0.4,
+          fillOpacity: stateCode === selectedStateCode ? 0.8 : 0.5,
         }}
         eventHandlers={{
           click: () => {
@@ -119,20 +138,46 @@ export default function BubbleMap({
             e.target.setStyle({ fillOpacity: 0.9 });
           },
           mouseout: (e) => {
-            if (selectedStateCode !== stateCode) {
-              e.target.setStyle({ fillOpacity: 0.4 });
-            } else {
-              e.target.setStyle({ fillOpacity: 0.9 });
-            }
+            e.target.setStyle({
+              fillOpacity: stateCode === selectedStateCode ? 0.8 : 0.5,
+            });
           },
         }}
       />
     );
+
+    const label = (
+      <Marker
+        key={`label-${stateCode}`}
+        position={[lat, lng]}
+        icon={L.divIcon({
+          className: "",
+          html: `<div style="
+     position: absolute;
+     font-weight: normal;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10px;
+      color: #fff;
+
+        pointer-events: none;
+
+    ">${
+      stateData.total > 2000000 ? formatCompactNumber(stateData.total) : ""
+    }</div>`,
+          iconSize: [0, 0],
+        })}
+      />
+    );
+
+    return [circle, label];
   });
+
   function stateStyle(feature: any) {
     return {
-      fillColor: "transparent",
-      weight: 1,
+      fillColor: "#ccc",
+      weight: 2,
       color: "#fff", // thin white border
       fillOpacity: 0,
       // no dashArray, no shadow, etc.
@@ -150,11 +195,16 @@ export default function BubbleMap({
           stateName: feature.properties.name,
           stateData: data?.[year]?.[stateCode] || null,
         });
-
-        // Remove keyboard focus to prevent outline showing
-        if (e.originalEvent?.target) {
-          (e.originalEvent.target as HTMLElement).blur();
-        }
+      },
+      mouseover: (e: any) => {
+        e.target.setStyle({
+          fillOpacity: 0.5,
+        });
+      },
+      mouseout: (e: any) => {
+        e.target.setStyle({
+          fillOpacity: 0,
+        });
       },
     });
   }
@@ -174,7 +224,9 @@ export default function BubbleMap({
         attribution="&copy; OpenStreetMap contributors"
       />
       <GeoJSON
+        z-index={400}
         key={year}
+        // key={`${year}-${selectedStateCode}`} // 👈 force re-render when selection changes
         data={geoJsonData}
         style={stateStyle}
         onEachFeature={onEachState}
