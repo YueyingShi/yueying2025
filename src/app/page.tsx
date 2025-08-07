@@ -24,7 +24,7 @@ export default function HomePage() {
   return (
     <>
       <Banner />
-      <div className="max-w-7xl mx-auto p-8 my-12 flex flex-col gap-16">
+      <div className="max-w-7xl mx-auto p-8 my-12 flex flex-col gap-32">
         <ProjectList projects={projects} />
         <About />
       </div>

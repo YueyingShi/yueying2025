@@ -13,6 +13,7 @@ type MoonSceneProps = {
 };
 
 export default function MoonScene({
+  hugeSize = 1080,
   desktopSize = 960,
   mobileSize = 640,
 }: MoonSceneProps) {
@@ -20,11 +21,20 @@ export default function MoonScene({
   const rendererRef = useRef<THREE.WebGLRenderer | null>(null);
   const [size, setSize] = React.useState(() => {
     if (typeof window === "undefined") return desktopSize;
-    return window.innerWidth <= 768 ? mobileSize : desktopSize;
+    return window.innerWidth > 1440
+      ? hugeSize
+      : window.innerWidth > 768
+      ? desktopSize
+      : mobileSize;
   });
   useEffect(() => {
     const handleResize = () => {
-      const newSize = window.innerWidth <= 768 ? mobileSize : desktopSize;
+      const newSize =
+        window.innerWidth > 1440
+          ? hugeSize
+          : window.innerWidth > 768
+          ? desktopSize
+          : mobileSize;
       setSize(newSize);
     };
     window.addEventListener("resize", handleResize);

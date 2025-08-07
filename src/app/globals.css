@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f9fafb;
   --foreground: #171717;
 }
 
@@ -28,21 +28,21 @@ body {
 }
 
 html {
-  scroll-behavior: smooth;
+  @apply scroll-smooth;
 }
 
 .paragraph {
-  @apply max-w-5xl  flex flex-col gap-2 mb-4 text-gray-800;
+  @apply max-w-5xl w-full  flex flex-col gap-2 my-6  text-gray-800;
 }
 h1 {
   @apply font-bold  my-1;
 }
 
 h2 {
-  @apply text-2xl font-semibold mt-2;
+  @apply text-2xl font-semibold mt-4;
 }
 h3 {
-  @apply font-semibold mt-1;
+  @apply font-semibold mt-2;
 }
 strong {
   @apply font-semibold;

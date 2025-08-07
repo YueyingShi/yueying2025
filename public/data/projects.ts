@@ -1,6 +1,7 @@
 export const projects = [
   {
     slug: "glow",
+    icon: "/img/glow.png",
     title: "Glow - Eindhoven Light Festival",
     short_description: "Graph and communication design for Glow festival",
     long_description:
@@ -13,6 +14,7 @@ export const projects = [
   },
   {
     slug: "presence",
+    icon: "/img/presence.png",
     title: "Sence of Presence",
     short_description:
       "Exploring Presence in Virtual Environments: With Rasch Model Approach",
@@ -26,6 +28,7 @@ export const projects = [
   },
   {
     slug: "vote",
+    icon: "/img/vote.png",
     title: "Voice of People",
     short_description: "Data visualization for US president history elections.",
     details: {
@@ -36,6 +39,7 @@ export const projects = [
   },
   {
     slug: "yiui",
+    icon: "/img/yiui.png",
     title: "YIUI Smart TV System",
     short_description:
       "A major system upgrade includes settings and navigation design.",

@@ -21,7 +21,7 @@ export function ProjectList({ projects }: ProjectListProps) {
         <h2 id="projects" className="mb-4">
           Projects
         </h2>
-        <section className="grid grid-cols-1 md:grid-cols-2  gap-4">
+        <section className="grid grid-cols-1 md:grid-cols-3  gap-4">
           {projects.map((project) => (
             <Link href={`/projects/${project.slug}`} key={project.slug}>
               <ProjectCard key={project.slug} project={project} />

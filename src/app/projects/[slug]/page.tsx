@@ -2,8 +2,12 @@ import Glow from "@/components/projects/Glow";
 import Presence from "@/components/projects/Presence";
 import Vote from "@/components/projects/Vote";
 import Yiui from "@/components/projects/Yiui";
-import { projects } from "../../../../public/data/projects";
 import { notFound } from "next/navigation";
+import { projects } from "@/data/projects";
+
+interface ProjectPageProps {
+  params: { slug: string };
+}
 
 type ProjectComponentMap = {
   [key: string]: React.ComponentType;
@@ -16,9 +20,10 @@ const projectComponents: ProjectComponentMap = {
   yiui: Yiui,
 };
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default function ProjectPage({ params }: ProjectPageProps) {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return notFound();
+
   const Component = projectComponents[params.slug];
 
   return (
