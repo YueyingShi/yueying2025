@@ -82,7 +82,9 @@ export default function BubbleMap({
   data: ElectionData | null;
   height?: string;
 }) {
-  const [geoJsonData, setGeoJsonData] = useState<any>(null);
+  const [geoJsonData, setGeoJsonData] = useState<{
+    features: StateFeature[];
+  } | null>(null);
   const [selectedStateCode, setSelectedStateCode] = useState<string | null>(
     null
   );
