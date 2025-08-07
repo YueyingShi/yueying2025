@@ -1,9 +1,14 @@
 import Badge from "@/components/Badge";
 import Image from "next/image";
+type ProjectDetails = {
+  Scope: string[];
+  // Add other properties as needed
+};
+
 type Project = {
   title: string;
   short_description: string;
-  details: object;
+  details: ProjectDetails;
   icon: string;
 };
 
@@ -16,13 +21,13 @@ export function ProjectCard({ project }: { project: Project }) {
         className="h-32 max-w-48  mb-2  object-contain mix-blend-darken"
       />
       <div className="flex-1 flex flex-col gap-1">
-        <h3 className="text-xl font-semibold">{project.title}</h3>
-        <p className="text-sm text-gray-600">{project.short_description}</p>
-      </div>
-
+        {Array.isArray(project.details.Scope) &&
+          project.details.Scope.map((scope) => (
+            <Badge key={scope} text={scope} />
+          ))}{" "}
       <div className="flex gap-2 mt-4">
-        {Array.isArray((project.details as any).Scope) &&
-          ((project.details as any).Scope as string[]).map((scope) => (
+        {Array.isArray(project.details.Scope) &&
+          project.details.Scope.map((scope) => (
             <Badge key={scope} text={scope} />
           ))}{" "}
       </div>

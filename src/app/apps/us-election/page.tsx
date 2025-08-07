@@ -66,7 +66,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
     chartData = years.map((yr) => {
       const stateYearData = votesData[yr]?.[selected.stateCode];
       const votesForYear = stateYearData?.votes || {};
-      const obj: Record<string, any> = { year: yr };
+      const obj: Record<string, number | string> = { year: yr };
       orderedParties.forEach((party) => {
         obj[party] = votesForYear[party] || 0;
       });

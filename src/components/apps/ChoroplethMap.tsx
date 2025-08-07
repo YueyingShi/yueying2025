@@ -66,13 +66,15 @@ export default function ChoroplethMap({
   data: ElectionData | null;
   height?: string;
 }) {
-  const [geoJsonData, setGeoJsonData] = useState<any>(null);
+  const [geoJsonData, setGeoJsonData] =
+    useState<GeoJSON.FeatureCollection | null>(null);
   const [selectedStateCode, setSelectedStateCode] = useState<string | null>(
     null
   );
-  const [geoJsonLayer, setGeoJsonLayer] = useState<any>(null);
+  const [geoJsonLayer, setGeoJsonLayer] =
+    useState<GeoJSON.FeatureCollection | null>(null);
 
-  const handleGeoJsonRef = useCallback((layer: any) => {
+  const handleGeoJsonRef = useCallback((layer) => {
     if (layer) {
       setGeoJsonLayer(layer);
     }
@@ -87,7 +89,7 @@ export default function ChoroplethMap({
       .then(setGeoJsonData);
   }, []);
   // Initial style applied to each feature on load
-  function stateStyle(feature: any) {
+  function stateStyle(feature) {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     const stateData = data?.[year]?.[stateCode];
@@ -116,7 +118,7 @@ export default function ChoroplethMap({
   useEffect(() => {
     if (!geoJsonLayer || !geoJsonData) return;
 
-    geoJsonLayer.eachLayer((layer: any) => {
+    geoJsonLayer.eachLayer((layer) => {
       const feature = layer.feature;
       const stateName = feature.properties.name;
       const stateCode = stateNameToCode[stateName];
@@ -156,12 +158,12 @@ export default function ChoroplethMap({
             stateData: data?.[year]?.[stateCode] || null,
           });
         },
-        mouseover: (e: any) => {
+        mouseover: (e) => {
           e.target.setStyle({
             fillOpacity: 1,
           });
         },
-        mouseout: (e: any) => {
+        mouseout: (e) => {
           const isStillSelected = selectedStateCode === stateCode;
           e.target.setStyle({
             fillOpacity: isStillSelected ? 0.8 : 0.4,

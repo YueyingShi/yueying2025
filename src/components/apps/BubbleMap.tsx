@@ -32,8 +32,23 @@ const partyColors: Record<string, string> = {
   UNKNOWN: "#ddd",
 };
 
+interface StateFeatureProperties {
+  name: string;
+  key: string;
+}
+
+interface StateFeature {
+  type: string;
+  properties: StateFeatureProperties;
+  geometry: {
+    type: string;
+    coordinates: number[][] | number[][][];
+  };
+  key: string;
+}
+
 // helper to get state centroid (approximate)
-function getCentroid(geometry): [number, number] {
+function getCentroid(geometry: StateFeature["geometry"]): [number, number] {
   // GeoJSON geometries can be Polygon or MultiPolygon
   const coords =
     geometry.type === "Polygon"
@@ -103,7 +118,7 @@ export default function BubbleMap({
   }
 
   // Inside your map over geoJsonData.features
-  const bubbles = geoJsonData?.features.flatMap((feature) => {
+  const bubbles = geoJsonData?.features.flatMap((feature: StateFeature) => {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     const stateData = data?.[year]?.[stateCode];
@@ -174,7 +189,7 @@ export default function BubbleMap({
     return [circle, label];
   });
 
-  function stateStyle(feature) {
+  function stateStyle() {
     return {
       fillColor: "#ccc",
       weight: 2,
@@ -184,7 +199,7 @@ export default function BubbleMap({
     };
   }
 
-  function onEachState(feature, layer) {
+  function onEachState(feature: StateFeature, layer: L.Layer) {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     layer.on({
