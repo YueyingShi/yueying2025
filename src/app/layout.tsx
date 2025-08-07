@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 
 const rockSalt = Rock_Salt({
   variable: "--font-rock-salt",
+  subsets: ["latin"],
   weight: ["400"], // only regular weight
 });
 
