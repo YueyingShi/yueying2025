@@ -18,12 +18,6 @@ type ElectionData = Record<
   >
 >;
 
-const partyColors: Record<string, string> = {
-  REPUBLICAN: "#ff4c4c",
-  DEMOCRAT: "#4c6fff",
-  OTHER: "#888888",
-  UNKNOWN: "#ddd",
-};
 function interpolateColor(percentage: number): string {
   const p = Math.max(0, Math.min(1, percentage));
 

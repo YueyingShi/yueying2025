@@ -33,7 +33,7 @@ const partyColors: Record<string, string> = {
 };
 
 // helper to get state centroid (approximate)
-function getCentroid(geometry: any): [number, number] {
+function getCentroid(geometry): [number, number] {
   // GeoJSON geometries can be Polygon or MultiPolygon
   const coords =
     geometry.type === "Polygon"
@@ -41,8 +41,8 @@ function getCentroid(geometry: any): [number, number] {
       : geometry.coordinates.flat(1);
 
   // simple centroid average of coordinates
-  const latSum = coords.reduce((sum: number, c: any) => sum + c[1], 0);
-  const lngSum = coords.reduce((sum: number, c: any) => sum + c[0], 0);
+  const latSum = coords.reduce((sum: number, c) => sum + c[1], 0);
+  const lngSum = coords.reduce((sum: number, c) => sum + c[0], 0);
   const count = coords.length;
 
   return [latSum / count, lngSum / count];
@@ -103,7 +103,7 @@ export default function BubbleMap({
   }
 
   // Inside your map over geoJsonData.features
-  const bubbles = geoJsonData?.features.flatMap((feature: any) => {
+  const bubbles = geoJsonData?.features.flatMap((feature) => {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     const stateData = data?.[year]?.[stateCode];
@@ -174,7 +174,7 @@ export default function BubbleMap({
     return [circle, label];
   });
 
-  function stateStyle(feature: any) {
+  function stateStyle(feature) {
     return {
       fillColor: "#ccc",
       weight: 2,
@@ -184,11 +184,11 @@ export default function BubbleMap({
     };
   }
 
-  function onEachState(feature: any, layer: any) {
+  function onEachState(feature, layer) {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     layer.on({
-      click: (e) => {
+      click: () => {
         setSelectedStateCode(stateCode);
         onSelectStateData({
           stateCode,
@@ -196,12 +196,12 @@ export default function BubbleMap({
           stateData: data?.[year]?.[stateCode] || null,
         });
       },
-      mouseover: (e: any) => {
+      mouseover: (e) => {
         e.target.setStyle({
           fillOpacity: 0.5,
         });
       },
-      mouseout: (e: any) => {
+      mouseout: (e) => {
         e.target.setStyle({
           fillOpacity: 0,
         });

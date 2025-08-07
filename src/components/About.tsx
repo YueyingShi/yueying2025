@@ -92,8 +92,8 @@ export default function About() {
               festival.
             </p>
             <p>
-              Designed "Wayfinding" — 80 interactive fantasy mushroom lights
-              spread across 2 km of outdoor exhibition path.
+              Designed &quot;Wayfinding&quot; — 80 interactive fantasy mushroom
+              lights spread across 2 km of outdoor exhibition path.
             </p>
           </div>
 

@@ -37,21 +37,22 @@ export default function Glow() {
           A unique and beautiful way to find your way. That is how visitors to
           Eindhoven University of Technology are guided through the site during
           GLOW, from one installation to another. Between all these
-          installations, that's where the Wayfinding project shines. The
+          installations, that&apos;s where the Wayfinding project shines. The
           mushrooms form an interactive system. Visitors can activate a
-          mushroom, after which it glows and spreads its 'spores', which
-          activate another mushroom nearby. This creates a chain reaction, which
-          submerges the entire path - or parts of it - in a sea of ​​​​light.
+          mushroom, after which it glows and spreads its &apos;spores&apos;,
+          which activate another mushroom nearby. This creates a chain reaction,
+          which submerges the entire path - or parts of it - in a sea of
+          ​​​​light.
         </p>
       </section>
       <section className="paragraph">
         <h2>Graphic Design</h2>
         <p>
-          Thrilled to be part of GLOW's creative journey! Designing the
+          Thrilled to be part of GLOW&apos;s creative journey! Designing the
           illustrations has been like dancing with neon lights, immersing myself
           in vibrant and playful colors. GLOW never fails to impress with
-          brilliant ideas and amazing projects. Can't wait to see what's coming
-          next!
+          brilliant ideas and amazing projects. Can&apos;t wait to see
+          what&apos;s coming next!
         </p>
       </section>
     </>

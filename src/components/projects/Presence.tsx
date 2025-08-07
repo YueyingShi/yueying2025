@@ -83,9 +83,9 @@ export default function Presence() {
         </p>
         <h3>Methods</h3>
         <p className="">
-          We tested two VR experiences: a high plank scenario ("Pit VE") and a
-          nighttime street environment ("Street VE"). And the following three
-          types of items was included:
+          We tested two VR experiences: a high plank scenario (&quot;Pit
+          VE&quot;) and a nighttime street environment (&quot;Street VE&quot;).
+          And the following three types of items was included:
         </p>
         <ul className="list-disc list-inside  space-y-1">
           <li>EEG and physiological monitoring</li>
@@ -141,10 +141,10 @@ export default function Presence() {
         <p className="">
           By combining psychometric modeling (the Rasch Model) with immersive
           tech, this research paves the way for more consistent, meaningful
-          measurement of presence in VR. It's a step toward making virtual
+          measurement of presence in VR. It&apos;s a step toward making virtual
           environments more powerful, engaging, and useful across domains.
         </p>
-      </section>{" "}
+      </section>
     </>
   );
 }
