@@ -29,7 +29,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <div className="w-full   pt-24 pb-16 items-center bg-gray-100 font-serif">
+      <div className="w-full pt-24 pb-16 items-center bg-gray-100 font-serif">
         <div className="max-w-5xl px-4 mx-auto flex flex-col gap-4">
           {/* title */}
           <div className="w-full flex flex-col gap-1">
@@ -38,7 +38,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </div>
 
           {/* details */}
-          <div className=" w-full flex flex-col gap-1 mb-4">
+          <div className="w-full flex flex-col gap-1 mb-4">
             {Object.entries(project.details).map(([key, value]) => (
               <div key={key} className="flex items-center ">
                 <span className="text-gray-400 w-18">{key}</span>{" "}
@@ -50,7 +50,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </div>
       </div>
-      <main className="max-w-5xl  mx-auto p-4 my-6 flex flex-col items-center gap-6 font-serif">
+      <main className="max-w-5xl mx-auto p-4 my-6 flex flex-col items-center gap-6 font-serif">
         {/* main content */}
         <Component />
       </main>
