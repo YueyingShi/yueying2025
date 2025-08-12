@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Glow() {
   return (
     <>
@@ -13,12 +15,12 @@ export default function Glow() {
       <section className="paragraph">
         <h2>Navigation Design</h2>
         <div className="flex gap-2 w-full">
-          <img
+          <Image
             src="/projects/mushroom2.jpeg"
             alt="Navigation Design"
             className="flex-1 h-64 object-cover rounded"
           />
-          <img
+          <Image
             src="/projects/mushroom3.jpg"
             alt="Navigation Design"
             className="flex-1 h-64 object-cover rounded"
