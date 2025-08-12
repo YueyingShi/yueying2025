@@ -61,7 +61,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
 
   // Prepare stacked chart data for all years for the selected state
   // chartData = [{ year: "2004", REPUBLICAN: 1000, DEMOCRAT: 2000, ... }, ...]
-  let chartData = [];
+  let chartData: Array<Record<string, number | string>> = [];
   if (selected && selected.stateCode && votesData) {
     chartData = years.map((yr) => {
       const stateYearData = votesData[yr]?.[selected.stateCode];
