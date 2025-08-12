@@ -5,6 +5,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import stateNameToCode from "@/data/stateNameToCode";
+import L from "leaflet";
 
 type ElectionData = Record<
   string,
@@ -116,60 +117,70 @@ export default function ChoroplethMap({
   }
   // Update style of GeoJSON layers when selection changes
   useEffect(() => {
+    // Somewhere in your component or function:
+    const geoJsonLayer = L.geoJSON(geoJsonData); // geoJsonData is FeatureCollection
     if (!geoJsonLayer || !geoJsonData) return;
 
     geoJsonLayer.eachLayer((layer) => {
-      const feature = layer.feature;
-      const stateName = feature.properties.name;
-      const stateCode = stateNameToCode[stateName];
+      const geoJsonFeatureLayer = layer as L.GeoJSON;
+      const feature = geoJsonFeatureLayer.feature;
+      if (
+        feature &&
+        "properties" in feature &&
+        typeof feature.properties === "object" &&
+        feature.properties !== null
+      ) {
+        const stateName = feature.properties.name;
+        const stateCode = stateNameToCode[stateName];
 
-      const stateData = data?.[year]?.[stateCode];
-      let fillColor = "#ccc"; // Default gray for no data
+        const stateData = data?.[year]?.[stateCode];
+        let fillColor = "#ccc"; // Default gray for no data
 
-      if (stateData) {
-        const repVotes = stateData.votes.REPUBLICAN || 0;
-        const demVotes = stateData.votes.DEMOCRAT || 0;
-        const total = repVotes + demVotes;
+        if (stateData) {
+          const repVotes = stateData.votes.REPUBLICAN || 0;
+          const demVotes = stateData.votes.DEMOCRAT || 0;
+          const total = repVotes + demVotes;
 
-        if (total > 0) {
-          const demRatio = demVotes / total; // 1 = all blue, 0 = all red
-          fillColor = interpolateColor(1 - demRatio);
+          if (total > 0) {
+            const demRatio = demVotes / total; // 1 = all blue, 0 = all red
+            fillColor = interpolateColor(1 - demRatio);
+          }
         }
+
+        const isSelected = selectedStateCode === stateCode;
+
+        // Reset base style depending on selection
+        geoJsonFeatureLayer.setStyle({
+          fillColor,
+          weight: 1,
+          color: "#fff",
+          fillOpacity: isSelected ? 0.8 : 0.4,
+        });
+
+        geoJsonFeatureLayer.off(); // Remove previous handlers
+
+        geoJsonFeatureLayer.on({
+          click: () => {
+            setSelectedStateCode(stateCode);
+            onSelectStateData({
+              stateCode,
+              stateName,
+              stateData: data?.[year]?.[stateCode] || null,
+            });
+          },
+          mouseover: (e) => {
+            e.target.setStyle({
+              fillOpacity: 1,
+            });
+          },
+          mouseout: (e) => {
+            const isStillSelected = selectedStateCode === stateCode;
+            e.target.setStyle({
+              fillOpacity: isStillSelected ? 0.8 : 0.4,
+            });
+          },
+        });
       }
-
-      const isSelected = selectedStateCode === stateCode;
-
-      // Reset base style depending on selection
-      layer.setStyle({
-        fillColor,
-        weight: 1,
-        color: "#fff",
-        fillOpacity: isSelected ? 0.8 : 0.4,
-      });
-
-      layer.off(); // Remove previous handlers
-
-      layer.on({
-        click: () => {
-          setSelectedStateCode(stateCode);
-          onSelectStateData({
-            stateCode,
-            stateName,
-            stateData: data?.[year]?.[stateCode] || null,
-          });
-        },
-        mouseover: (e) => {
-          e.target.setStyle({
-            fillOpacity: 1,
-          });
-        },
-        mouseout: (e) => {
-          const isStillSelected = selectedStateCode === stateCode;
-          e.target.setStyle({
-            fillOpacity: isStillSelected ? 0.8 : 0.4,
-          });
-        },
-      });
     });
   }, [geoJsonLayer, geoJsonData, year, data, selectedStateCode]);
 
