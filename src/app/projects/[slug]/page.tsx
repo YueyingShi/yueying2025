@@ -5,11 +5,6 @@ import Yiui from "@/components/projects/Yiui";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 
-interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
-}
 type ProjectComponentMap = {
   [key: string]: React.ComponentType;
 };
