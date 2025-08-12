@@ -206,7 +206,10 @@ export default function BubbleMap({
     };
   }
 
-  function onEachState(feature: Feature<Geometry, any>, layer: L.Layer) {
+  function onEachState(
+    feature: Feature<Geometry, StateFeatureProperties>,
+    layer: L.Layer
+  ) {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     layer.on({
