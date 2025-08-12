@@ -26,10 +26,11 @@ export default async function ProjectPage({
 }: {
   params: { slug: string };
 }) {
-  const project = projects.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
   if (!project) return notFound();
 
-  const Component = projectComponents[params.slug];
+  const Component = projectComponents[slug];
 
   return (
     <>
