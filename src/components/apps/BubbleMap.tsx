@@ -86,6 +86,7 @@ export default function BubbleMap({
   height?: string;
 }) {
   const [geoJsonData, setGeoJsonData] = useState<{
+    type: "FeatureCollection";
     features: StateFeature[];
   } | null>(null);
   const [selectedStateCode, setSelectedStateCode] = useState<string | null>(
