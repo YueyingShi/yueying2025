@@ -3,11 +3,14 @@
 import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
 
+import type { ProjectDetails } from "./ProjectCard";
+
 interface Project {
   slug: string;
   title: string;
   short_description: string;
-  details: object;
+  details: ProjectDetails;
+  icon: string;
 }
 
 interface ProjectListProps {

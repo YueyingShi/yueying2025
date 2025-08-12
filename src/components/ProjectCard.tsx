@@ -1,11 +1,11 @@
 import Badge from "@/components/Badge";
 import Image from "next/image";
-type ProjectDetails = {
+export type ProjectDetails = {
   Scope: string[];
   // Add other properties as needed
 };
 
-type Project = {
+export type Project = {
   title: string;
   short_description: string;
   details: ProjectDetails;
