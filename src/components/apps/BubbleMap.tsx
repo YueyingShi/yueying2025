@@ -10,6 +10,7 @@ import {
   Marker,
 } from "react-leaflet";
 import L from "leaflet"; // ⬅️ Import Leaflet directly
+import { Feature, Geometry } from "geojson";
 
 import "leaflet/dist/leaflet.css";
 import stateNameToCode from "@/data/stateNameToCode";
@@ -205,7 +206,7 @@ export default function BubbleMap({
     };
   }
 
-  function onEachState(feature: StateFeature, layer: L.Layer) {
+  function onEachState(feature: Feature<Geometry, any>, layer: L.Layer) {
     const stateName = feature.properties.name;
     const stateCode = stateNameToCode[stateName];
     layer.on({
