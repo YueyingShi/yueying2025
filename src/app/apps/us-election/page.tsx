@@ -17,6 +17,7 @@ import {
   YAxis,
   Tooltip as ChartTooltip,
   Legend,
+  LegendProps,
   ResponsiveContainer,
 } from "recharts";
 
@@ -73,17 +74,13 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
       return obj;
     });
   }
-  interface LegendProps {
-    orderedParties: string[];
-    partyColors: Record<string, string>;
-  }
 
-  const renderLegend: React.FC = () => {
+  const renderLegend = () => {
+    // props.payload contains legend items
     return (
       <ul className="flex list-none text-xs justify-center items-center space-x-4 mb-2">
         {orderedParties.map((party: string) => (
-          <li key={party} className="flex items-center cursor-pointer ">
-            {/* Color box */}
+          <li key={party} className="flex items-center cursor-pointer">
             <span
               style={{
                 display: "inline-block",
