@@ -56,8 +56,11 @@ function getCentroid(geometry: StateFeature["geometry"]): [number, number] {
       : geometry.coordinates.flat(1);
 
   // simple centroid average of coordinates
-  const latSum = coords.reduce((sum: number, c) => sum + c[1], 0);
-  const lngSum = coords.reduce((sum: number, c) => sum + c[0], 0);
+  const filteredCoords = coords.filter(
+    (c): c is number[] => Array.isArray(c) && c.length >= 2
+  );
+  const latSum = filteredCoords.reduce((sum: number, c) => sum + c[1], 0);
+  const lngSum = filteredCoords.reduce((sum: number, c) => sum + c[0], 0);
   const count = coords.length;
 
   return [latSum / count, lngSum / count];
