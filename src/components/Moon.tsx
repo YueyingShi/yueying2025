@@ -9,6 +9,7 @@ import { PMREMGenerator } from "three";
 
 type MoonSceneProps = {
   desktopSize?: number;
+  hugeSize?: number;
   mobileSize?: number;
 };
 
