@@ -49,4 +49,51 @@ export const projects = [
       Scope: ["UX Design"],
     },
   },
+  {
+    slug: "hidenseek",
+    icon: "/img/yiui.png",
+    title: "Hide and Seek",
+    short_description: "AR Outdoor Device for Pre-party Entertainment",
+    details: {
+      Role: "UX Designer, Game Designer",
+      Date: "May 2019",
+      Scope: ["UX Design", "Gamification"],
+    },
+  },
+  {
+    slug: "sugar",
+    icon: "/img/yiui.png",
+    title: "Sugar Ribbon",
+    short_description:
+      "Communication support for diabetes patients and their families.",
+    details: {
+      Role: "UX Researcher, Data Analyst",
+      Date: "January 2022",
+      Scope: ["UX Research", "Data Analysis"],
+    },
+  },
+  {
+    slug: "foodtinder",
+    icon: "/img/yiui.png",
+    title: "Food Tinder",
+    short_description:
+      "AI Recipe Recommendation System based on User Interaction.",
+    details: {
+      Role: "UX Designer, Developer",
+      Date: "September 2021",
+      Scope: ["UX Design", "Software Development"],
+    },
+  },
+  {
+    slug: "seasons",
+    icon: "/img/yiui.png",
+    title: "Seasons",
+    short_description:
+      "A Interaction Screen for Wanxiang Forest New Media Exhibition",
+    details: {
+      Role: "Concept Designer",
+      Date: "July 2020",
+      Scope: ["Interaction Design"],
+    },
+  },
 ];
