@@ -51,7 +51,7 @@ export const projects = [
   },
   {
     slug: "hidenseek",
-    icon: "/img/yiui.png",
+    icon: "/img/hidenseek.png",
     title: "Hide and Seek",
     short_description: "AR Outdoor Device for Pre-party Entertainment",
     details: {
@@ -62,7 +62,7 @@ export const projects = [
   },
   {
     slug: "sugar",
-    icon: "/img/yiui.png",
+    icon: "/img/sugar.png",
     title: "Sugar Ribbon",
     short_description:
       "Communication support for diabetes patients and their families.",
@@ -74,7 +74,7 @@ export const projects = [
   },
   {
     slug: "foodtinder",
-    icon: "/img/yiui.png",
+    icon: "/img/foodtinder.png",
     title: "Food Tinder",
     short_description:
       "AI Recipe Recommendation System based on User Interaction.",
@@ -86,7 +86,7 @@ export const projects = [
   },
   {
     slug: "seasons",
-    icon: "/img/yiui.png",
+    icon: "/img/seasons.png",
     title: "Seasons",
     short_description:
       "A Interaction Screen for Wanxiang Forest New Media Exhibition",

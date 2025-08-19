@@ -1,4 +1,6 @@
-import ElectionPage from "@/app/apps/us-election/page";
+// src/components/projects/Vote.tsx
+import dynamic from "next/dynamic";
+const ElectionPage = dynamic(() => import("@/app/apps/us-election/page"));
 export default function Vote() {
   return (
     <>

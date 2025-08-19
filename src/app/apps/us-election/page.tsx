@@ -78,7 +78,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
   const renderLegend = () => {
     // props.payload contains legend items
     return (
-      <ul className="flex list-none text-xs justify-center items-center space-x-4 mb-2">
+      <ul className="flex flex-wrap  items-center justify-center list-none text-[8pt] gap-2 mx-auto">
         {orderedParties.map((party: string) => (
           <li key={party} className="flex items-center cursor-pointer">
             <span
@@ -209,7 +209,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
 
         {/* description */}
         <div
-          className={`absolute bottom-6 right-6 p-4 w-1/3 rounded-xl  bg-white/75  z-500`}
+          className={`absolute bottom-6 right-6 px-6 py-3 w-1/4 rounded-xl  bg-white/75  z-500`}
         >
           {!selected && (
             <div className="text-gray-600 text-sm">
@@ -218,46 +218,48 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
           )}
           {selected && selected.stateCode && (
             <>
-              <div>
-                <h4 className="text-lg font-semibold mb-2">
-                  {selected.stateName}
-                </h4>
-              </div>
+              <div className="text-gray-800 flex flex-col items-center">
+                <div>
+                  <h4 className="text-lg font-semibold ">
+                    {selected.stateName}
+                  </h4>
+                </div>
 
-              <ResponsiveContainer
-                width="100%"
-                height={240}
-                className="text-xs"
-              >
-                <BarChart
-                  data={chartData}
-                  margin={{ top: 20, right: 30, left: 0, bottom: 0 }}
-                  stackOffset="expand"
+                <ResponsiveContainer
+                  width="100%"
+                  height={200}
+                  className="text-xs"
                 >
-                  <XAxis dataKey="year" />
-                  <YAxis
-                    tickFormatter={(val) =>
-                      val > 0 ? `${(val * 100).toFixed(0)}%` : ""
-                    }
-                    domain={[0, 1]}
-                    tickCount={6}
-                    type="number"
-                  />
-                  <ChartTooltip
-                    formatter={(value: number) => value.toLocaleString()}
-                    labelFormatter={(label) => `Year: ${label}`}
-                  />
-                  <Legend content={renderLegend} />
-                  {orderedParties.map((party) => (
-                    <Bar
-                      key={party}
-                      dataKey={party}
-                      stackId="votesStack"
-                      fill={partyColors[party]}
+                  <BarChart
+                    data={chartData}
+                    margin={{ top: 20, right: 20, left: -10, bottom: 0 }}
+                    stackOffset="expand"
+                  >
+                    <XAxis dataKey="year" />
+                    <YAxis
+                      tickFormatter={(val) =>
+                        val > 0 ? `${(val * 100).toFixed(0)}%` : ""
+                      }
+                      domain={[0, 1]}
+                      tickCount={6}
+                      type="number"
                     />
-                  ))}
-                </BarChart>
-              </ResponsiveContainer>
+                    <ChartTooltip
+                      formatter={(value: number) => value.toLocaleString()}
+                      labelFormatter={(label) => `Year: ${label}`}
+                    />
+                    <Legend content={renderLegend} />
+                    {orderedParties.map((party) => (
+                      <Bar
+                        key={party}
+                        dataKey={party}
+                        stackId="votesStack"
+                        fill={partyColors[party]}
+                      />
+                    ))}
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
             </>
           )}
 

@@ -72,10 +72,9 @@ export default function ChoroplethMap({
   const [selectedStateCode, setSelectedStateCode] = useState<string | null>(
     null
   );
-  const [geoJsonLayer, setGeoJsonLayer] =
-    useState<GeoJSON.FeatureCollection | null>(null);
+  const [geoJsonLayer, setGeoJsonLayer] = useState<L.GeoJSON | null>(null);
 
-  const handleGeoJsonRef = useCallback((layer) => {
+  const handleGeoJsonRef = useCallback((layer: L.GeoJSON | null) => {
     if (layer) {
       setGeoJsonLayer(layer);
     }
@@ -117,70 +116,64 @@ export default function ChoroplethMap({
   }
   // Update style of GeoJSON layers when selection changes
   useEffect(() => {
-    // Somewhere in your component or function:
-    const geoJsonLayer = L.geoJSON(geoJsonData); // geoJsonData is FeatureCollection
     if (!geoJsonLayer || !geoJsonData) return;
 
-    geoJsonLayer.eachLayer((layer) => {
-      const geoJsonFeatureLayer = layer as L.GeoJSON;
-      const feature = geoJsonFeatureLayer.feature;
-      if (
-        feature &&
-        "properties" in feature &&
-        typeof feature.properties === "object" &&
-        feature.properties !== null
-      ) {
-        const stateName = feature.properties.name;
-        const stateCode = stateNameToCode[stateName];
+    geoJsonLayer.eachLayer((layer: L.Layer) => {
+      // @ts-ignore
+      const feature = (layer as any).feature;
+      if (!feature?.properties) return;
 
-        const stateData = data?.[year]?.[stateCode];
-        let fillColor = "#ccc"; // Default gray for no data
+      const stateName = feature.properties.name;
+      const stateCode = stateNameToCode[stateName];
 
-        if (stateData) {
-          const repVotes = stateData.votes.REPUBLICAN || 0;
-          const demVotes = stateData.votes.DEMOCRAT || 0;
-          const total = repVotes + demVotes;
+      const stateData = data?.[year]?.[stateCode];
+      let fillColor = "#ccc";
 
-          if (total > 0) {
-            const demRatio = demVotes / total; // 1 = all blue, 0 = all red
-            fillColor = interpolateColor(1 - demRatio);
-          }
+      if (stateData) {
+        const repVotes = stateData.votes.REPUBLICAN || 0;
+        const demVotes = stateData.votes.DEMOCRAT || 0;
+        const total = repVotes + demVotes;
+
+        if (total > 0) {
+          const demRatio = demVotes / total;
+          fillColor = interpolateColor(1 - demRatio);
         }
-
-        const isSelected = selectedStateCode === stateCode;
-
-        // Reset base style depending on selection
-        geoJsonFeatureLayer.setStyle({
-          fillColor,
-          weight: 1,
-          color: "#fff",
-          fillOpacity: isSelected ? 0.8 : 0.4,
-        });
-
-        geoJsonFeatureLayer.off(); // Remove previous handlers
-
-        geoJsonFeatureLayer.on({
-          click: () => {
-            setSelectedStateCode(stateCode);
-            onSelectStateData({
-              stateCode,
-              stateName,
-              stateData: data?.[year]?.[stateCode] || null,
-            });
-          },
-          mouseover: (e) => {
-            e.target.setStyle({
-              fillOpacity: 1,
-            });
-          },
-          mouseout: (e) => {
-            const isStillSelected = selectedStateCode === stateCode;
-            e.target.setStyle({
-              fillOpacity: isStillSelected ? 0.8 : 0.4,
-            });
-          },
-        });
       }
+
+      const isSelected = selectedStateCode === stateCode;
+
+      // @ts-ignore
+      layer.setStyle({
+        fillColor,
+        weight: 1,
+        color: "#fff",
+        fillOpacity: isSelected ? 0.8 : 0.4,
+      });
+
+      // @ts-ignore
+      layer.off(); // clear old listeners
+
+      // @ts-ignore
+      layer.on({
+        click: () => {
+          setSelectedStateCode(stateCode);
+          onSelectStateData({
+            stateCode,
+            stateName,
+            stateData: data?.[year]?.[stateCode] || null,
+          });
+        },
+        mouseover: (e) => {
+          // @ts-ignore
+          e.target.setStyle({ fillOpacity: 1 });
+        },
+        mouseout: (e) => {
+          // @ts-ignore
+          e.target.setStyle({
+            fillOpacity: selectedStateCode === stateCode ? 0.8 : 0.4,
+          });
+        },
+      });
     });
   }, [geoJsonLayer, geoJsonData, year, data, selectedStateCode]);
 
