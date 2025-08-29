@@ -14,7 +14,14 @@ export default function Glow() {
       </section>
       <section className="paragraph">
         <h2>Navigation Design</h2>
-        <div className="flex gap-4 w-full">
+        <p>
+          In the sunmmer of 2021, we, the group members from different majors,
+          got together to brainstorm an interactive art installation. The idea
+          later turned into 80 illuminated mushrooms spread across the campus,
+          which, through interaction, will guide visitors to the next
+          interactive installation.
+        </p>
+        <div className="flex flex-wrap  gap-4 w-full">
           <Image
             src="/projects/glow/mushroom2.jpeg"
             alt="Navigation Design"
@@ -32,13 +39,6 @@ export default function Glow() {
         </div>
 
         <p>
-          In the sunmmer of 2021, we, the group members from different majors,
-          got together to brainstorm an interactive art installation. The idea
-          later turned into 80 illuminated mushrooms spread across the campus,
-          which, through interaction, will guide visitors to the next
-          interactive installation.
-        </p>
-        <p>
           A path full of magical luminescent mushrooms. Enchanting interaction.
           A unique and beautiful way to find your way. That is how visitors to
           Eindhoven University of Technology are guided through the site during
@@ -53,29 +53,6 @@ export default function Glow() {
       </section>
       <section className="paragraph">
         <h2>Graphic Design</h2>
-        <div className="flex  w-full rounded overflow-clip">
-          <Image
-            src="/projects/glow/academy.gif"
-            alt="Navigation Design"
-            width={400}
-            height={300}
-            className="flex-1  h-64 max-w-1/3 object-cover "
-          />
-          <Image
-            src="/projects/glow/city.gif"
-            alt="Navigation Design"
-            width={400}
-            height={300}
-            className="flex-1 h-64 max-w-1/3 object-cover "
-          />
-          <Image
-            src="/projects/glow/lab.gif"
-            alt="Navigation Design"
-            width={400}
-            height={300}
-            className="flex-1 h-64 max-w-1/3 object-cover "
-          />
-        </div>
         <p>
           In addition to working as the installation artist, I am also
           responsible for the project&apos;s graphic design. This includes
@@ -83,6 +60,29 @@ export default function Glow() {
           well as designing social media videos and icons for marketing
           purposes.
         </p>
+        <div className="flex flex-wrap w-full rounded overflow-clip bg-black">
+          <Image
+            src="/projects/glow/academy.gif"
+            alt="Navigation Design"
+            width={400}
+            height={300}
+            className="flex-1  h-64 md:max-w-1/3 object-cover "
+          />
+          <Image
+            src="/projects/glow/city.gif"
+            alt="Navigation Design"
+            width={400}
+            height={300}
+            className="flex-1 h-64 md:max-w-1/3 object-cover "
+          />
+          <Image
+            src="/projects/glow/lab.gif"
+            alt="Navigation Design"
+            width={400}
+            height={300}
+            className="flex-1 h-64 md:max-w-1/3 object-cover "
+          />
+        </div>
       </section>
     </>
   );

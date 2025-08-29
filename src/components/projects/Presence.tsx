@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Presence() {
   return (
     <>
@@ -13,21 +14,22 @@ export default function Presence() {
         </p>
         <h3>Why Does Presence Matter?</h3>
         <p className="">
-          Defined as the “illusion of non-mediation,” presence occurs when users
-          become unaware of the VR interface itself, feeling as though they’ve
-          stepped into another reality. This is essential in VR applications,
-          particularly in education and simulation, where a stronger sense of
-          presence leads to more effective learning and higher engagement.
+          Defined as the &quot;illusion of non-mediation,&quot; presence occurs
+          when users become unaware of the VR interface itself, feeling as
+          though they’ve stepped into another reality. This is essential in VR
+          applications, particularly in education and simulation, where a
+          stronger sense of presence leads to more effective learning and higher
+          engagement.
         </p>
         <h3>How is Presence Measured Traditionally?</h3>
         <p className="">Traditionally, presence is measured through:</p>
         <ul className="list-disc list-inside  space-y-1">
           <li>
             <strong>Self-reports:</strong> Questionnaires or interviews that
-            capture users’ subjective impressions.
+            capture users&apos; subjective impressions.
           </li>
           <li>
-            <strong>Behavioral observations:</strong> Monitoring users’
+            <strong>Behavioral observations:</strong> Monitoring users&apos;
             reactions and actions to infer immersion.
           </li>
           <li>
@@ -38,7 +40,7 @@ export default function Presence() {
         <h3>Challenges with Traditional Measurement</h3>
         <p className="">
           While each method offers insights, they often produce conflicting
-          results. There’s also no widely accepted standard across studies,
+          results. There&apos;s also no widely accepted standard across studies,
           making comparisons difficult. This inconsistency led us to seek a
           better, more unified approach.
         </p>
@@ -49,8 +51,8 @@ export default function Presence() {
         <p>
           The Rasch Model is a statistical method in psychometrics that measures
           hidden traits—like ability or attitude—by analyzing how likely a
-          person is to answer questions correctly based on both the person’s
-          ability and the question’s difficulty.
+          person is to answer questions correctly based on both the
+          person&apos;s ability and the question&apos;s difficulty.
         </p>
         <p>
           For example, if a student answers a very hard math problem correctly,
@@ -85,16 +87,55 @@ export default function Presence() {
         <p className="">
           We tested two VR experiences: a high plank scenario (&quot;Pit
           VE&quot;) and a nighttime street environment (&quot;Street VE&quot;).
-          And the following three types of items was included:
         </p>
-        <ul className="list-disc list-inside  space-y-1">
-          <li>EEG and physiological monitoring</li>
-          <li>Behavioral observations</li>
+        <div className="flex flex-wrap gap-4 w-full">
+          <Image
+            src="/projects/present/pitve.png"
+            alt="Pit VR Experience"
+            width={600}
+            height={600}
+            className="flex-1 h-64 object-cover rounded"
+          />{" "}
+          <Image
+            src="/projects/present/streetve.png"
+            alt="Street VR Experience"
+            width={600}
+            height={600}
+            className="flex-1 h-64 object-cover rounded"
+          />
+        </div>
+        <p> And the following three types of items was included:</p>
+
+        <ul className=" list-decimal  list-outside  space-y-1 ml-6">
           <li>
-            Post-experience questionnaires on spatial presence, involvement, and
-            realism
+            <span className=" font-medium">
+              Electrodermal Activity (EDA) Monitoring.
+            </span>
+            &nbsp;We measured sweat gland activity caused by
+            emotional/physiological arousal. As shown in the image, the
+            electrodes were placed on the participants fingers during the
+            experience
+          </li>
+          <li>
+            <span className=" font-medium">Behavioral observations.</span>
+            &nbsp; For example, tracking if participants look around before
+            passing the zebra crossing in the VR environment
+          </li>
+          <li>
+            <span className=" font-medium">Post-experience questionnaires</span>
+            &nbsp;on spatial presence, involvement, and realism
           </li>
         </ul>
+        <div className="flex gap-4 w-full ">
+          <Image
+            src="/projects/present/sweat.png"
+            alt="EEG detection"
+            width={600}
+            height={600}
+            className="flex-1 h-64 object-contain rounded bg-white p-3 "
+          />
+        </div>
+
         <p className="">
           Then we applied the Rasch model, individually on each VE and then a
           combined study, to analyze and calibrate the results.

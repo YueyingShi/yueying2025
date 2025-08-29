@@ -4,6 +4,9 @@ import Vote from "@/components/projects/Vote";
 import Yiui from "@/components/projects/Yiui";
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
+import Seasons from "@/components/projects/Seasons";
+import Sugar from "@/components/projects/Sugar";
+import HideNSeek from "@/components/projects/HideNSeek";
 
 type ProjectComponentMap = {
   [key: string]: React.ComponentType;
@@ -14,6 +17,9 @@ const projectComponents: ProjectComponentMap = {
   presence: Presence,
   vote: Vote,
   yiui: Yiui,
+  seasons: Seasons,
+  sugar: Sugar,
+  hidenseek: HideNSeek,
 };
 
 export default async function ProjectPage({
