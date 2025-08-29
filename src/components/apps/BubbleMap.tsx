@@ -249,9 +249,6 @@ export default function BubbleMap({
         attribution="&copy; OpenStreetMap contributors"
       />
       <GeoJSON
-        z-index={400}
-        key={year}
-        // key={`${year}-${selectedStateCode}`} // 👈 force re-render when selection changes
         data={geoJsonData}
         style={stateStyle}
         onEachFeature={onEachState}
