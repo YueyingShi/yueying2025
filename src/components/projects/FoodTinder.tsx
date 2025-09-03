@@ -5,84 +5,108 @@ export default function FoodTinder() {
     <>
       <section className="paragraph">
         <p>
-          Every November, Eindhoven hosts a festival of light art throughout the
-          city that attracts many visitors. Over the past 15 years, from 45,000
-          visitors in the beginning to over 770,000 visitors in 2019, GLOW has
-          grown from a week-long light art festival to a city symbol of
-          Eindhoven.
+          By 2025, machine learning has become deeply integrated into everyday
+          applications, with generative AI and personalization reshaping how
+          people interact with digital services. Even without programming
+          expertise, users can now leverage AI-driven tools to enhance their
+          daily lives. Food Tinder is a recipe recommendation app designed for
+          young people living alone. Like a dating app, it “matches” users with
+          dishes that fit their preferences, moods, and lifestyles.
         </p>
       </section>
       <section className="paragraph">
-        <h2>Navigation Design</h2>
-        <div className="flex gap-4 w-full">
-          <Image
-            src="/projects/glow/mushroom2.jpeg"
-            alt="Navigation Design"
-            width={600}
-            height={600}
-            className="flex-1 h-64 object-cover rounded"
-          />
-          <Image
-            src="/projects/glow/mushroom3.jpg"
-            alt="Navigation Design"
-            width={600}
-            height={600}
-            className="flex-1 h-64 object-cover rounded"
-          />
-        </div>
+        <div className="flex flex-col lg:flex-wrap gap-4 items-center">
+          <div className="flex-1 flex flex-col gap-4">
+            <h2>Data Collection</h2>
+            <p className="flex-1">
+              We built a lightweight app to collect initial user data, forming
+              the foundation of the recommendation system. The data includes
+              demographics, dietary restrictions, moods, short-term needs (e.g.,
+              quick meals, comfort food), general food preferences, and
+              ingredient-level likes and dislikes. In our pilot study, eight
+              participants used the app for one week, generating 388
+              high-quality entries that served as the training set for our
+              models.
+            </p>
+          </div>
 
-        <p>
-          In the sunmmer of 2021, we, the group members from different majors,
-          got together to brainstorm an interactive art installation. The idea
-          later turned into 80 illuminated mushrooms spread across the campus,
-          which, through interaction, will guide visitors to the next
-          interactive installation.
-        </p>
-        <p>
-          A path full of magical luminescent mushrooms. Enchanting interaction.
-          A unique and beautiful way to find your way. That is how visitors to
-          Eindhoven University of Technology are guided through the site during
-          GLOW, from one installation to another. Between all these
-          installations, that&apos;s where the Wayfinding project shines. The
-          mushrooms form an interactive system. Visitors can activate a
-          mushroom, after which it glows and spreads its &apos;spores&apos;,
-          which activate another mushroom nearby. This creates a chain reaction,
-          which submerges the entire path - or parts of it - in a sea of
-          ​​​​light.
-        </p>
-      </section>
-      <section className="paragraph">
-        <h2>Graphic Design</h2>
-        <div className="flex  w-full rounded overflow-clip">
           <Image
-            src="/projects/glow/academy.gif"
-            alt="Navigation Design"
-            width={400}
-            height={300}
-            className="flex-1  h-64 max-w-1/3 object-cover "
-          />
-          <Image
-            src="/projects/glow/city.gif"
-            alt="Navigation Design"
-            width={400}
-            height={300}
-            className="flex-1 h-64 max-w-1/3 object-cover "
-          />
-          <Image
-            src="/projects/glow/lab.gif"
-            alt="Navigation Design"
-            width={400}
-            height={300}
-            className="flex-1 h-64 max-w-1/3 object-cover "
+            src="/projects/foodtinder/collection.png"
+            alt="Data Collection"
+            width={600}
+            height={600}
+            className="flex-none lg:w-2/5 object-contain rounded"
           />
         </div>
-        <p>
-          In addition to working as the installation artist, I am also
-          responsible for the project&apos;s graphic design. This includes
-          creating posters for the installations—over 30 projects each year—as
-          well as designing social media videos and icons for marketing
-          purposes.
-        </p>
+      </section>
+      <section className="paragraph">
+        <div className="flex flex-col  lg:flex-wrap-reverse gap-4 items-center">
+          <div className="flex-1 flex flex-col gap-4">
+            <h2>Predicting User Preferences with Machine Learning</h2>
+            <p>
+              From the collected dataset, we experimented with several models,
+              including regression, decision trees, and k-nearest neighbors.
+              After tuning parameters and testing user experience, the
+              regression model delivered the best results. It achieved over 75%
+              accuracy in predicting simple "like/dislike" choices, while also
+              producing a probability score that indicates how much a user might
+              enjoy a dish.
+            </p>
+            <p>
+              This probability is visualized as a dish score in the app,
+              offering users a transparent and interpretable metric. Although
+              newer approaches like transformer-based recommendation systems are
+              emerging in 2025, we prioritized a lightweight regression model to
+              balance accuracy, interpretability, and computational
+              efficiency—ideal for mobile use.
+            </p>
+          </div>
+          <Image
+            src="/projects/foodtinder/learning.png"
+            alt="Data Collection"
+            width={600}
+            height={600}
+            className="flex-none lg:w-2/5 object-cover rounded"
+          />
+        </div>
+      </section>
+      <section className="paragraph">
+        <div className="flex flex-col  lg:flex-wrap gap-4 items-center">
+          <div className="flex-1 flex flex-col gap-4">
+            <h2>Integrating AI into the User Experience</h2>
+
+            <p>
+              Once embedded in the app, the algorithm directly shaped recipe
+              recommendations. Dishes with higher predicted scores were
+              prioritized (50–75% chance of being shown), while low-score dishes
+              appeared less frequently (10–20%), maintaining diversity without
+              overwhelming users with irrelevant suggestions.
+            </p>
+            <p>
+              To support AI transparency and trust, Food Tinder displays both
+              the model’s categorical judgment ("like," "fair," or "dislike")
+              using emojis and the numerical prediction score. This dual-layer
+              feedback helps users understand why certain dishes are
+              recommended, aligning with today’s emphasis on explainable AI.
+            </p>
+          </div>{" "}
+          <Image
+            src="/projects/foodtinder/ui.png"
+            alt="Data Collection"
+            width={600}
+            height={600}
+            className="flex-none lg:w-2/5 object-cover rounded"
+          />
+        </div>
+      </section>
+      <section className="paragraph  ">
+        <Image
+          src="/projects/foodtinder/mockup.png"
+          alt="Data Collection"
+          width={1200}
+          height={1200}
+          className="flex-1 w-full object-cover rounded"
+        />
       </section>
     </>
   );

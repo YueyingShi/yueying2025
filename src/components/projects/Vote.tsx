@@ -4,7 +4,7 @@ const ElectionPage = dynamic(() => import("@/app/apps/us-election/page"));
 export default function Vote() {
   return (
     <>
-      <div className="w-[100vw] px-8 max-w-7xl">
+      <div className="w-[100vw] px-4 max-w-7xl">
         <ElectionPage embed={true} />
       </div>
       <section className="paragraph">

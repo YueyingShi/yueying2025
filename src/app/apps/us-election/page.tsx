@@ -101,12 +101,12 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
   return (
     <>
       <main
-        className={`relative mx-auto  grid grid-cols-1 w-full md:grid-cols-4 max-w-7xl ${
+        className={`relative mx-auto  grid grid-cols-1 w-full lg:grid-cols-4 max-w-7xl ${
           embed ? "" : "  mt-16 "
         }  bg-gray-50 font-sans border border-gray-300 rounded `}
       >
         {/* control panel */}
-        <div className="flex flex-col gap-8 px-8 py-8">
+        <div className="flex flex-col gap-8 p-4 md:p-8">
           <div className="flex flex-col gap-1">
             <h2 className="text-xl font-semibold">Voice of People</h2>
             <p className="text-gray-400 text-sm">2004 - 2020</p>
@@ -209,7 +209,7 @@ export default function ElectionPage({ embed = false }: { embed?: boolean }) {
 
         {/* description */}
         <div
-          className={`absolute bottom-6 right-6 px-6 py-3 w-1/4 rounded-xl  bg-white/75  z-500`}
+          className={` hidden  md:absolute bottom-6 right-6 px-6 py-3 w-1/2 lg:w-1/4 rounded-xl  bg-white/75  z-500`}
         >
           {!selected && (
             <div className="text-gray-600 text-sm">

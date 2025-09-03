@@ -22,7 +22,7 @@ export function ProjectList({ projects }: ProjectListProps) {
     <>
       <div>
         <h2 id="projects" className="mb-4">
-          Projects
+          PROJECTS
         </h2>
         <section className="grid grid-cols-1 md:grid-cols-3  gap-4">
           {projects.map((project) => (

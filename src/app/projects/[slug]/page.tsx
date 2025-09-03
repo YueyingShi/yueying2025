@@ -7,6 +7,7 @@ import { projects } from "@/data/projects";
 import Seasons from "@/components/projects/Seasons";
 import Sugar from "@/components/projects/Sugar";
 import HideNSeek from "@/components/projects/HideNSeek";
+import FoodTinder from "@/components/projects/FoodTinder";
 
 type ProjectComponentMap = {
   [key: string]: React.ComponentType;
@@ -20,6 +21,7 @@ const projectComponents: ProjectComponentMap = {
   seasons: Seasons,
   sugar: Sugar,
   hidenseek: HideNSeek,
+  foodtinder: FoodTinder,
 };
 
 export default async function ProjectPage({
