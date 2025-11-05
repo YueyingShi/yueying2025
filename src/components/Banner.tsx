@@ -1,16 +1,33 @@
 "use client";
 import Moon from "./Moon";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 export function Banner() {
+  useEffect(() => {
+    const video = document.getElementById(
+      "moonVideo"
+    ) as HTMLVideoElement | null;
+    if (video) {
+      video.playbackRate = 1.5; // quick motion (1 = normal speed)
+    }
+  }, []);
   return (
     <div
-      className="flex justify-center items-center h-screen  overflow-hidden"
+      className="flex justify-center items-center  h-screen  overflow-hidden "
       id="banner"
     >
-      {/* Background Image with filters (only this div is filtered) */}
-      {/* Background Image */}
-      <div
+      {/* Background Video */}
+      <video
+        id="moonVideo"
+        src="/moonvideo.mp4"
+        className="absolute inset-0 h-full w-full object-cover ease-in-out sm:object-contain object-center sm:py-4 -z-10  bg-black contrast-110 brightness-105 saturate-150 "
+        autoPlay
+        loop
+        muted
+        playsInline
+      ></video>
+      {/* <div
         className="absolute inset-0 h-screen -z-10"
         style={{
           backgroundImage: 'url("/max-mckinnon-c9OCWLka764-unsplash.jpg")',
@@ -18,7 +35,7 @@ export function Banner() {
           backgroundPosition: "center",
           filter: " saturate(0.1) brightness(0.8)",
         }}
-      />
+      /> */}
       {/* Text */}
       <div className="absolute inset-0 flex flex-col gap-8 justify-center items-center z-10 text-white pointer-events-none ">
         <div className="flex flex-col gap-6 items-center text-center ">
@@ -51,11 +68,6 @@ export function Banner() {
         >
           <ChevronDownIcon className="h-12 w-12" />
         </a>
-      </div>
-
-      {/* 3D Scene */}
-      <div className="">
-        <Moon />
       </div>
     </div>
   );
