@@ -14,14 +14,14 @@ export default function ExperienceBlock({
   items,
 }: ExperienceBlockProps) {
   return (
-    <div className="mb-10">
+    <div className="flex flex-col mb-2">
       {/* Section Title */}
-      <h3 className="text-lg font-bold tracking-wide mb-5 text-gray-400">
+      <h3 className="text-lg font-bold tracking-wide mb-2 text-gray-400">
         {title}
       </h3>
 
       {/* Items */}
-      <div className="space-y-5">
+      <div className="grid md:grid-cols-3 gap-4">
         {items.map((item, index) => (
           <div
             key={index}

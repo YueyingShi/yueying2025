@@ -24,7 +24,30 @@ export default function About() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+      <div className="flex flex-col gap-6 mt-4">
+        <ExperienceBlock
+          title="WORK EXPERIENCE"
+          items={[
+            {
+              role: "Digital Solution Developer",
+              period: "2022.09 – Present | Deerns",
+              description:
+                "Build and manage a cloud-native web platform spanning 13 countries, driving UX research, data-driven design, and dashboard creation while ensuring scalability and a consistent user experience.",
+            },
+            {
+              role: "UX Design Intern",
+              period: "2021.09–2022.03 | Accenture (VanBerlo)",
+              description:
+                "Conducted user research, interaction and visual design, usability testing, consulting projects, and tool development to support design initiatives.",
+            },
+            {
+              role: "UX Designer",
+              period: "2018.07–2019.09 | Konka",
+              description:
+                "Designed and optimized over 20 digital products used by up to 21.9 million daily users through UX research, user behavior analysis, and creating personas, journey maps, and wireframes to guide design improvements.",
+            },
+          ]}
+        />
         <ExperienceBlock
           title="EDUCATION"
           items={[
@@ -32,36 +55,13 @@ export default function About() {
               role: "MSc Human-Computer Interaction",
               period: "2020–2022 | Eindhoven University of Technology",
               description:
-                "UX methods, data analysis, ergonomics, data-aided design, data visualization, ML & design, robot interaction.",
+                "UX research, data analysis, data visualization, data-driven design, ergonomics, and human-robot interaction.",
             },
             {
               role: "BEng Industrial Design",
               period: "2014–2018 | South China University of Technology",
               description:
-                "Interaction Design, Vehicle Design, 3D Design, Design Psychology, Management, Methodology.",
-            },
-          ]}
-        />
-        <ExperienceBlock
-          title="WORK EXPERIENCE"
-          items={[
-            {
-              role: "UX Designer & Researcher",
-              period: "2022.09 – Present | Deerns",
-              description:
-                "Digital UX solutions, web app development, design system setup & maintenance.",
-            },
-            {
-              role: "UX Design Intern",
-              period: "2021.09–2022.03 | Accenture (VanBerlo)",
-              description:
-                "User research, interaction/visual design, user testing, consulting projects, tool development.",
-            },
-            {
-              role: "UX Designer",
-              period: "2018.07–2019.09 | Konka",
-              description:
-                "Smart TV software: games, video chat, facial recognition, voice assistant. Used by 21.9M+ daily users.",
+                "Product design, psychology, design management, user research, and ergonomics.",
             },
           ]}
         />
@@ -72,13 +72,13 @@ export default function About() {
               role: "Installation Artist & Graphic Designer",
               period: "2022.09 – Present | GLOW Eindhoven",
               description:
-                "Poster visuals for 30+ exhibitions. Designed “Wayfinding”—80 interactive mushroom lights over 2 km.",
+                "Graphic design for 30+ exhibitions per year. Interactive installation design for “Wayfinding” project — 80 interactive mushroom lights over 2 km.",
             },
             {
               role: "New Media Concept Artist",
               period: "2020.03 – 2020.08 | Pixel Forest",
               description:
-                "Exhibition/event concept design for new media art: projections, lighting, immersive experiences.",
+                "Exhibition/event concept design for new media art: projections, lighting, immersive interactive experiences.",
             },
           ]}
         />
